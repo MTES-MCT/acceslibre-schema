@@ -304,9 +304,10 @@
          "title":"Type de dispositif d'appel à l'entrée",
          "description":"Quel(s) type(s) de dispositifs d'appel sont présents ?",
          "help_text_ui":"Dispositifs d'appels présents",
-         "type":"string",
+         "type":"array",
          "example":"",
-         "constraints":{
+         "items":{
+            "type": "string",
             "enum": ["bouton", "sonnette", "interphone", "visiophone"]
          }
       },
@@ -385,9 +386,10 @@
          "title":"Liste des équipements d'aide à l'audition et à la communication",
          "description":"Sélectionnez les équipements ou prestations disponibles à l'accueil de l'établissement :",
          "help_text_ui":"Équipements ou prestations disponibles",
-         "type":"string",
+         "type":"array",
          "example":"",
-         "constraints":{
+         "items":{
+            "type": "string",
             "enum": ["autres", "bim", "lsf", "scd", "lpc"]
          }
       },
@@ -485,7 +487,7 @@
          "title":"Marques ou labels",
          "description":"Si l’établissement est entré dans une démarche volontaire de labellisation liée au handicap, quelle marques ou quels labels a-t-il obtenu ?",
          "help_text_ui":"Marque(s) ou label(s) obtenus par l'établissement",
-         "type":"string",
+         "type":"array",
          "example":"",
          "constraints":{
             "enum": ["autre", "dpt", "mobalib", "th"]
@@ -496,9 +498,9 @@
          "title":"Famille(s) de handicap concernées(s)",
          "description":"Quelle(s) famille(s) de handicap sont couvertes par ces marques et labels ?",
          "help_text_ui":"Famille(s) de handicap couverte(s) par ces marques ou labels",
-         "type":"string",
+         "type":"array",
          "example":"",
-         "constraints":{
+         "items":{
             "enum": ["auditif", "mental", "moteur", "visuel"]
          }
       },
@@ -533,7 +535,7 @@
          }
       },
       {
-         "name":"conformité",
+         "name":"conformite",
          "title":"Conformité",
          "description":"L'établissement est-il déclaré conforme ? (réservé à l'administration)",
          "help_text_ui":"Statut réglementaire de conformité de l'établissement",
