@@ -389,6 +389,7 @@
          "type":"array",
          "example":"",
          "array_item":{
+            "type": "string",
             "enum": ["autres", "bim", "lsf", "scd", "lpc"]
          }
       },
