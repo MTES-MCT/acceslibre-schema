@@ -306,9 +306,11 @@
          "help_text_ui":"Dispositifs d'appels présents",
          "type":"array",
          "example":"",
-         "items":{
+         "arrayItem":{
             "type": "string",
-            "enum": ["bouton", "sonnette", "interphone", "visiophone"]
+            "constraints": {
+               "enum": ["bouton", "sonnette", "interphone", "visiophone"]
+            }
          }
       },
       {
@@ -388,9 +390,11 @@
          "help_text_ui":"Équipements ou prestations disponibles",
          "type":"array",
          "example":"",
-         "array_item":{
+         "arrayItem":{
             "type": "string",
-            "enum": ["autres", "bim", "lsf", "scd", "lpc"]
+            "constraints": {
+               "enum": ["autres", "bim", "lsf", "scd", "lpc"]
+            }
          }
       },
       {
@@ -489,8 +493,11 @@
          "help_text_ui":"Marque(s) ou label(s) obtenus par l'établissement",
          "type":"array",
          "example":"",
-         "constraints":{
-            "enum": ["autre", "dpt", "mobalib", "th"]
+         "arrayItem":{
+            "type": "string",
+            "constraints": {
+               "enum": ["autre", "dpt", "mobalib", "th"]
+            }
          }
       },
       {
@@ -500,8 +507,11 @@
          "help_text_ui":"Famille(s) de handicap couverte(s) par ces marques ou labels",
          "type":"array",
          "example":"",
-         "items":{
-            "enum": ["auditif", "mental", "moteur", "visuel"]
+         "arrayItem":{
+            "type": "string",
+            "constraints": {
+               "enum": ["auditif", "mental", "moteur", "visuel"]
+            }
          }
       },
       {
