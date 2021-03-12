@@ -388,7 +388,7 @@
          "help_text_ui":"Équipements ou prestations disponibles",
          "type":"array",
          "example":"",
-         "items":{
+         "array_item":{
             "type": "string",
             "enum": ["autres", "bim", "lsf", "scd", "lpc"]
          }
