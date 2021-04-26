@@ -553,5 +553,8 @@
          "example":""
       }
    ],
-   "primaryKey":"id"
+   "primaryKey":[
+      "id",
+      "labels_autre"
+   ]
 }
