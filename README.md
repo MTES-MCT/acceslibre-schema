@@ -1,13 +1,10 @@
-# Acceslibre Table Schema
+## Acceslibre Table Schema
 
 Ce dépôt contient la définition du schéma ETALAB au format JSON Schema utilisé pour la publication des données open-source d'[Acceslibre](https://acceslibre.beta.gouv.fr) sur [data.gouv](https://data.gouv.fr).
 
+### Contexte
+### Finalité
+### Description du schéma
+Ce schéma respecte le standard Table Schema. Pour en savoir plus, voir la page dédiée : [lien](https://github.com/betagouv/Aidants_Connect_Carto/wiki/Sch%C3%A9ma-%3A-introduction-%C3%A0-Table-Schema).
+
 Le schema est compatible avec le standard proposé par le [CNIG](http://cnig.gouv.fr/).
-
-## Fichiers disponibles
-
-- [`CHANGELOG.md`](CHANGELOG.md) contient la liste des changements entre les différentes versions de votre schéma ;
-- [`exemple-valide.csv`](exemple-valide.csv) est un fichier CSV d'exemple conforme par rapport au schéma décrit dans `schema.json` ;
-- [`LICENSE.md`](LICENSE.md) est le fichier de licence du dépôt ;
-- [`requirements.txt`](requirements.txt) liste les dépendances Python nécessaires pour effectuer des tests en intégration continue sur votre dépôt ;
-- [`schema.json`](schema.json) est le schéma au format Table Schema.
