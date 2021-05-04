@@ -1,557 +1,1291 @@
 {
-   "$schema":"https://specs.frictionlessdata.io/schemas/table-schema.json",
-   "name":"acceslibre",
-   "title":"Schéma des données d'accessibilité des ERPs",
-   "description":"Spécification du fichier d'échange relatif aux données d'accessibilité des Établissements Recevant du Public (ERP).",
-   "keywords":[
-      "accessibilite",
-      "access",
-      "a11y"
-   ],
-   "countryCode":"FR",
-   "homepage":"https://github.com/MTES-MCT/acceslibre-schema",
-   "path":"https://github.com/mon-orga/schema-objets-importants/raw/v0.1.1/schema.json",
-   "image":"https://github.com/mon-orga/schema-objets-importants/raw/v0.1.1/irve.png",
-   "licenses":[
-      {
-         "title":"Etalab Licence Ouverte 2.0",
-         "name":"etalab-2.0",
-         "path":"https://spdx.org/licenses/etalab-2.0.html"
-      }
-   ],
-   "resources":[
-      {
-         "title":"Fichier valide (CSV)",
-         "name":"exemple-valide-csv",
-         "path":"https://github.com/MTES-MCT/acceslibre-schema/raw/v0.1.1/exemple-valide.csv"
-      }
-   ],
-   "sources":[
-      {
-         "title":"Arrêté du 12 janvier 2017 relatif aux objets importants",
-         "path":"https://beta.legifrance.gouv.fr/codes/id/LEGISCTA000031367685/2020-05-25"
-      }
-   ],
-   "created":"2021-03-10",
-   "lastModified":"2021-03-10",
-   "version":"0.0.1",
-   "contributors":[
-      {
-         "title":"Caleb Eliacheff",
-         "email":"caleb.eliacheff@beta.gouv.fr",
-         "organisation":"MTES-MCT",
-         "role":"author"
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "name": "acceslibre",
+  "title": "Schéma des données d'accessibilité des ERPs",
+  "description": "Spécification du fichier d'échange relatif aux données d'accessibilité des Établissements Recevant du Public (ERP).",
+  "keywords": [
+    "accessibilite",
+    "access",
+    "a11y"
+  ],
+  "countryCode": "FR",
+  "homepage": "https://github.com/MTES-MCT/acceslibre-schema",
+  "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.1/schema.json",
+  "licenses": [
+    {
+      "title": "Etalab Licence Ouverte 2.0",
+      "name": "etalab-2.0",
+      "path": "https://spdx.org/licenses/etalab-2.0.html"
+    }
+  ],
+  "resources": [
+    {
+      "title": "Fichier valide (CSV)",
+      "name": "exemple-valide-csv",
+      "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.1/exemple-valide.csv"
+    }
+  ],
+  "sources": [],
+  "created": "2021-03-10",
+  "lastModified": "2021-03-10",
+  "version": "0.0.1",
+  "contributors": [
+    {
+      "title": "Caleb Eliacheff",
+      "email": "caleb.eliacheff@beta.gouv.fr",
+      "organisation": "MTES-MCT",
+      "role": "author"
+    },
+    {
+      "title": "Nicolas Pierrault",
+      "email": "nicolas@perriault.net",
+      "organisation": "MTES-MCT",
+      "role": "author"
+    }
+  ],
+  "fields": [
+    {
+      "name": "id",
+      "description": "Identifiant unique",
+      "type": "string",
+      "example": ""
+    },
+    {
+      "name": "transport_station_presence",
+      "title": "Proximité d'un arrêt de transport en commun",
+      "description": "Arrêt de transport en commun à proximité (moins de 200 mètres)",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "transport_information",
+      "title": "Informations complémentaires",
+      "type": "string",
+      "example": ""
+    },
+    {
+      "name": "stationnement_presence",
+      "title": "Stationnement dans l'ERP",
+      "description": "Présence de stationnement au sein de la parcelle de l'établissement",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "stationnement_pmr",
+      "title": "Stationnements adaptés dans l'ERP",
+      "description": "Présence de stationnement adapté au sein de la parcelle de l'établissement",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "stationnement_ext_presence",
+      "title": "Stationnement à proximité de l'ERP",
+      "description": "Présence de stationnement à proximité de l'établissement (moins de 200 mètres)",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "stationnement_ext_pmr",
+      "title": "Stationnements PMR à proximité de l'ERP",
+      "description": "Présence de stationnement adapté à proximité de l'établissement (moins de 200 mètres)",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "cheminement_ext_presence",
+      "title": "Cheminement extérieur",
+      "description": "L'accès à l'entrée depuis la voirie se fait par un cheminement extérieur",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "cheminement_ext_terrain_accidente",
+      "title": "Revêtement extérieur",
+      "description": "Ce revêtement est stable (absence de pavés, gravillons, terre, herbe, sable, ou toute surface non stabilisée)",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "cheminement_ext_plain_pied",
+      "title": "Cheminement extérieur de plain-pied",
+      "description": "L'accès à cet espace se fait de plain-pied (sans rupture de niveau)",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "cheminement_ext_ascenseur",
+      "title": "Ascenseur/élévateur",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "cheminement_ext_nombre_marches",
+      "title": "Nombre de marches",
+      "type": "integer",
+      "example": "0"
+    },
+    {
+      "name": "cheminement_ext_reperage_marches",
+      "title": "Marches ou escalier sécurisé(es)",
+      "description": "Nez de marche contrastés, bande d'éveil à la vigilance en haut de l'escalier et/ou première et dernière contremarches contrastées",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "cheminement_ext_sens_marches",
+      "title": "Sens de circulation de l'escalier",
+      "description": "Sens de circulation des marches ou de l’escalier",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "montant",
+          "descendant"
+        ]
       },
-      {
-         "title":"Nicolas Pierrault",
-         "email":"nicolas@perriault.net",
-         "organisation":"MTES-MCT",
-         "role":"author"
-      }
-   ],
-   "fields":[
-      {
-         "name":"id",
-         "description":"Identifiant unique",
-         "type":"string",
-         "example":""
+      "example": "Valeurs possibles: montant -> Montant, descendant -> Descendant"
+    },
+    {
+      "name": "cheminement_ext_main_courante",
+      "title": "Main courante",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "cheminement_ext_rampe",
+      "title": "Rampe",
+      "description": "Présence et type de rampe",
+      "type": "string",
+      "example": ""
+    },
+    {
+      "name": "cheminement_ext_pente_degre_difficulte",
+      "title": "Degré de difficulté de la pente",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "légère",
+          "importante"
+        ]
       },
-      {
-         "name":"transport_station_presence",
-         "title":"Proximité d'un arrêt de transport en commun",
-         "description":"Existe-t-il un arrêt de transport en commun à proximité (moins de 200 mètres) ?",
-         "help_text_ui":"Arrêt de transport en commun à proximité (moins de 200 mètres)",
-         "type":"boolean",
-         "example":""
+      "example": "Valeurs possibles: légère -> Légère, importante -> Importante"
+    },
+    {
+      "name": "cheminement_ext_pente_longueur",
+      "title": "Longueur de la pente",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "courte",
+          "moyenne",
+          "longue"
+        ]
       },
-      {
-         "name":"transport_information",
-         "title":"Informations complémentaires",
-         "description":"Préciser ici les informations supplémentaires sur ces transports (type de transport, ligne, nom de l'arrêt, etc) et éventuellement des informations jugées importantes sur le cheminement qui relie le point d'arrêt à l'établissement.",
-         "help_text_ui":null,
-         "type":"string",
-         "example":""
+      "example": "Valeurs possibles: courte -> < 0,5 mètres, moyenne -> entre 0,5 et 2 mètres, longue -> > 2 mètres"
+    },
+    {
+      "name": "cheminement_ext_devers",
+      "title": "Dévers",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "aucun",
+          "léger",
+          "important"
+        ]
       },
-      {
-         "name":"stationnement_presence",
-         "title":"Stationnement dans l'ERP",
-         "description":"Existe-t-il une ou plusieurs places de stationnement dans l’établissement ou au sein de la parcelle de l’établissement ?",
-         "help_text_ui":"Présence de stationnement au sein de la parcelle de l'établissement",
-         "type":"boolean",
-         "example":""
+      "example": "Valeurs possibles: aucun -> Aucun, léger -> Léger, important -> Important"
+    },
+    {
+      "name": "cheminement_ext_bande_guidage",
+      "title": "Bande de guidage",
+      "description": "Présence d'une bande de guidage au sol facilitant le déplacement d'une personne aveugle ou malvoyante",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "cheminement_ext_retrecissement",
+      "title": "Rétrécissement du cheminement",
+      "description": "Un ou plusieurs rétrecissements (inférieurs à 80 cm) du chemin pour atteindre l'entrée",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "entree_reperage",
+      "title": "Entrée facilement repérable",
+      "description": "Présence d'éléments facilitant le repérage de l'entrée de l’établissement (numéro de rue à proximité, enseigne, végétaux, éléments architecturaux contrastés, etc)",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "entree_vitree",
+      "title": "Entrée vitrée",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "entree_vitree_vitrophanie",
+      "title": "Repérage de la vitre",
+      "description": "Présence d'éléments contrastés permettant de visualiser les parties vitrées de l'entrée",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "entree_plain_pied",
+      "title": "Entrée de plain-pied",
+      "description": "L'entrée se fait de plain-pied (sans rupture de niveau)",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "entree_ascenseur",
+      "title": "Ascenseur/élévateur",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "entree_marches",
+      "title": "Nombre de marches",
+      "type": "integer",
+      "example": "0"
+    },
+    {
+      "name": "entree_marches_reperage",
+      "title": "Repérage des marches",
+      "description": "Nez de marche contrastés, bande d'éveil à la vigilance en haut de l'escalier et/ou première et dernière contremarches contrastées",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "entree_marches_main_courante",
+      "title": "Main courante",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "entree_marches_rampe",
+      "title": "Rampe",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "aucune",
+          "fixe",
+          "amovible"
+        ]
       },
-      {
-         "name":"stationnement_pmr",
-         "title":"Stationnements adaptés dans l'ERP",
-         "description":"Existe-t-il une ou plusieurs places de stationnement adaptées dans l’établissement ou au sein de la parcelle de l'établissement ?",
-         "help_text_ui":"Présence de stationnement adapté au sein de la parcelle de l'établissement",
-         "type":"boolean",
-         "example":""
+      "example": "Valeurs possibles: aucune -> Aucune, fixe -> Fixe, amovible -> Amovible"
+    },
+    {
+      "name": "entree_marches_sens",
+      "title": "Sens de circulation de l'escalier",
+      "description": "Sens de circulation des marches ou de l’escalier",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "montant",
+          "descendant"
+        ]
       },
-      {
-         "name":"stationnement_ext_presence",
-         "title":"Stationnement à proximité de l'ERP",
-         "description":"Existe-t-il une ou plusieurs places de stationnement en voirie ou en parking à proximité de l'établissement (200 m) ?",
-         "help_text_ui":"Présence de stationnement à proximité de l'établissement (moins de 200 mètres)",
-         "type":"boolean",
-         "example":""
+      "example": "Valeurs possibles: montant -> Montant, descendant -> Descendant"
+    },
+    {
+      "name": "entree_dispositif_appel",
+      "title": "Dispositif d'appel à l'entrée",
+      "description": "Présence d'un dispositif comme une sonnette pour signaler sa présence",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "entree_dispositif_appel_type",
+      "title": "Type de dispositif d'appel à l'entrée",
+      "description": "Dispositifs d'appels présents",
+      "type": "array",
+      "arrayItem": {
+        "type": "string",
+        "enum": [
+          "bouton",
+          "sonnette",
+          "interphone",
+          "visiophone"
+        ]
       },
-      {
-         "name":"stationnement_ext_pmr",
-         "title":"Stationnements PMR à proximité de l'ERP",
-         "description":"Existe-t-il une ou plusieurs places de stationnement adaptées en voirie ou en parking à proximité de l’établissement (200 m) ?",
-         "help_text_ui":"Présence de stationnement adapté à proximité de l'établissement (moins de 200 mètres)",
-         "type":"boolean",
-         "example":""
+      "example": "Valeurs possibles: bouton -> Bouton d’appel, sonnette -> Sonnette, interphone -> Interphone, visiophone -> Visiophone"
+    },
+    {
+      "name": "entree_balise_sonore",
+      "title": "Balise sonore à l'entrée",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "entree_aide_humaine",
+      "title": "Aide humaine",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "entree_largeur_mini",
+      "title": "Largeur de la porte",
+      "description": "Largeur minimale de la porte d'entrée",
+      "type": "integer",
+      "example": "0"
+    },
+    {
+      "name": "entree_pmr",
+      "title": "Entrée spécifique PMR",
+      "description": "Présence d'une entrée secondaire spécifique dédiée aux personnes à mobilité réduite",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "entree_pmr_informations",
+      "title": "Informations complémentaires concernant l'entrée PMR",
+      "type": "string",
+      "example": ""
+    },
+    {
+      "name": "entree_porte_manoeuvre",
+      "title": "Manoeuvre de la porte",
+      "description": "Mode d'ouverture de la porte",
+      "type": "string",
+      "example": ""
+    },
+    {
+      "name": "entree_porte_type",
+      "title": "Type de porte",
+      "description": "Type de porte",
+      "type": "string",
+      "example": ""
+    },
+    {
+      "name": "accueil_visibilite",
+      "title": "Visibilité de la zone d'accueil",
+      "description": "La zone d'accueil (guichet d’accueil, caisse, secrétariat, etc) est visible depuis l'entrée",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "accueil_personnels",
+      "title": "Personnel d'accueil",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "aucun",
+          "formés",
+          "non-formés"
+        ]
       },
-      {
-         "name":"cheminement_ext_presence",
-         "title":"Cheminement extérieur",
-         "description":"L'accès à l'entrée depuis la voirie se fait-il par un cheminement extérieur ?",
-         "help_text_ui":"L'accès à l'entrée depuis la voirie se fait par un cheminement extérieur",
-         "type":"boolean",
-         "example":""
+      "example": "Valeurs possibles: aucun -> Aucun personnel, formés -> Personnels sensibilisés ou formés, non-formés -> Personnels non-formés"
+    },
+    {
+      "name": "accueil_equipements_malentendants",
+      "title": "Liste des équipements d'aide à l'audition et à la communication",
+      "description": "Équipements ou prestations disponibles",
+      "type": "array",
+      "arrayItem": {
+        "type": "string",
+        "enum": [
+          "bim",
+          "bmp",
+          "lsf",
+          "lpc",
+          "sts",
+          "autres"
+        ]
       },
-      {
-         "name":"cheminement_ext_terrain_accidente",
-         "title":"Revêtement extérieur",
-         "description":"Le revêtement du cheminement extérieur (entre le trottoir et l'entrée de l’établissement) est-il stable (sol roulable, absence de pavés ou de gravillons, pas de terre ni d'herbe, etc.) ?",
-         "help_text_ui":"Ce revêtement est stable (absence de pavés, gravillons, terre, herbe, sable, ou toute surface non stabilisée)",
-         "type":"boolean",
-         "example":""
+      "example": "Valeurs possibles: bim -> Boucle à induction magnétique fixe, bmp -> Boucle à induction magnétique portative, lsf -> Langue des signes française, lpc -> Langue Française Parlée Complétée (LFPC), sts -> Sous-Titrage ou Transcription Simultanée, autres -> Autres"
+    },
+    {
+      "name": "accueil_cheminement_plain_pied",
+      "title": "Cheminement de plain-pied entre l'entrée et l'accueil",
+      "description": "L'accès à cet espace se fait de plain-pied (sans rupture de niveau)",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "accueil_cheminement_ascenseur",
+      "title": "Ascenseur/élévateur",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "accueil_cheminement_nombre_marches",
+      "title": "Nombre de marches",
+      "type": "integer",
+      "example": "0"
+    },
+    {
+      "name": "accueil_cheminement_reperage_marches",
+      "title": "Repérage des marches ou de l’escalier",
+      "description": "Nez de marche contrastés, bande d'éveil à la vigilance en haut de l'escalier et/ou première et dernière contremarches contrastées",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "accueil_cheminement_main_courante",
+      "title": "Main courante",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "accueil_cheminement_rampe",
+      "title": "Rampe",
+      "description": "Présence et type de rampe",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "accueil_cheminement_sens_marches",
+      "title": "Sens de circulation de l'escalier",
+      "description": "Sens de circulation des marches ou de l’escalier",
+      "type": "string",
+      "constraints": {
+        "enum": [
+          "montant",
+          "descendant"
+        ]
       },
-
-      {
-         "name":"cheminement_ext_plain_pied",
-         "title":"Cheminement extérieur de plain-pied",
-         "description":"Le cheminement est-il de plain-pied, c’est-à-dire sans marche ni ressaut supérieur à 2 cm ? Attention plain-pied ne signifie pas plat mais sans rupture brutale de niveau.",
-         "help_text_ui":"L'accès à cet espace se fait de plain-pied (sans rupture de niveau)",
-         "type":"boolean",
-         "example":""
+      "example": "Valeurs possibles: montant -> Montant, descendant -> Descendant"
+    },
+    {
+      "name": "accueil_retrecissement",
+      "title": "Rétrécissement du cheminement",
+      "description": "Un ou plusieurs rétrecissements (inférieurs à 80 cm) du chemin pour atteindre l'entrée",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    },
+    {
+      "name": "sanitaires_adaptes",
+      "title": "Sanitaires adaptés",
+      "description": "Mise à disposition de sanitaires adaptés dans l'établissement",
+      "type": "integer",
+      "example": "0"
+    },
+    {
+      "name": "labels",
+      "title": "Marques ou labels",
+      "description": "Marque(s) ou label(s) obtenus par l'établissement",
+      "type": "array",
+      "arrayItem": {
+        "type": "string",
+        "enum": [
+          "autre",
+          "dpt",
+          "mobalib",
+          "th"
+        ]
       },
-      {
-         "name":"cheminement_ext_ascenseur",
-         "title":"Ascenseur/élévateur",
-         "description":"Existe-t-il un ascenseur ou un élévateur ?",
-         "help_text_ui":null,
-         "type":"boolean",
-         "example":""
+      "example": "Valeurs possibles: autre -> Autre, dpt -> Destination pour Tous, mobalib -> Mobalib, th -> Tourisme & Handicap"
+    },
+    {
+      "name": "labels_familles_handicap",
+      "title": "Famille(s) de handicap concernées(s)",
+      "description": "Famille(s) de handicap couverte(s) par ces marques ou labels",
+      "type": "array",
+      "arrayItem": {
+        "type": "string",
+        "enum": [
+          "auditif",
+          "mental",
+          "moteur",
+          "visuel"
+        ]
       },
-      {
-         "name":"cheminement_ext_nombre_marches",
-         "title":"Nombre de marches",
-         "description":"Indiquer 0 s'il n'y a ni marche ni escalier",
-         "help_text_ui":null,
-         "type":"integer",
-         "example":"",
-         "constraints": {
-            "maximum":65535
-         }
-      },
-      {
-         "name":"cheminement_ext_reperage_marches",
-         "title":"Marches ou escalier sécurisé(es)",
-         "description":"L'escalier est-il sécurisé : nez de marche contrastés, bande d'éveil à la vigilance en haut de l'escalier, première et dernière contremarches contrastées ?",
-         "help_text_ui":"Nez de marche contrastés, bande d'éveil à la vigilance en haut de l'escalier et/ou première et dernière contremarches contrastées",
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"cheminement_ext_main_courante",
-         "title":"Main courante",
-         "description":"L'escalier est-il équipé d'une main courante ?",
-         "help_text_ui":null,
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"cheminement_ext_rampe",
-         "title":"Rampe",
-         "description":"S'il existe une rampe, est-elle fixe ou amovible ?",
-         "help_text_ui":"Présence et type de rampe",
-         "type":"string",
-         "example":"",
-         "constraints":{
-            "enum": ["aucune", "fixe", "amovible"]
-         }
-      },
-      {
-         "name":"cheminement_ext_pente",
-         "title":"Pente",
-         "description":"S'il existe une pente, quel est son degré de difficulté ?",
-         "help_text_ui":null,
-         "type":"string",
-         "example":"",
-         "constraints":{
-            "enum": ["aucune", "légère", "importante"]
-         }
-      },
-      {
-         "name":"cheminement_ext_devers",
-         "title":"Dévers",
-         "description":"Un dévers est une inclinaison transversale du cheminement. S'il en existe un, quel est son degré de difficulté ?",
-         "help_text_ui":null,
-         "type":"string",
-         "example":"",
-         "constraints":{
-            "enum": ["aucun", "léger", "important"]
-         }
-      },
-      {
-         "name":"cheminement_ext_bande_guidage",
-         "title":"Bande de guidage",
-         "description":"Présence d'une bande de guidage au sol facilitant le déplacement d'une personne aveugle ou malvoyante",
-         "help_text_ui":"Présence d'une bande de guidage au sol facilitant le déplacement d'une personne aveugle ou malvoyante",
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"cheminement_ext_retrecissement",
-         "title":"Rétrécissement du cheminement",
-         "description":"Existe-t-il un ou plusieurs rétrécissements (inférieur à 80 cm) du chemin emprunté par le public pour atteindre l'entrée ?",
-         "help_text_ui":"Un ou plusieurs rétrecissements (inférieurs à 80 cm) du chemin pour atteindre l'entrée",
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"entree_reperage",
-         "title":"Entrée facilement repérable",
-         "description":"Y a-t-il des éléments facilitant le repérage de l'entrée de l’établissement (numéro de rue à proximité, enseigne, végétaux, éléments architecturaux contrastés, etc) ?",
-         "help_text_ui":"Présence d'éléments facilitant le repérage de l'entrée de l’établissement (numéro de rue à proximité, enseigne, végétaux, éléments architecturaux contrastés, etc)",
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"entree_vitree",
-         "title":"Entrée vitrée",
-         "description":"La porte d'entrée est-elle vitrée ?",
-         "help_text_ui":null,
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"entree_vitree_vitrophanie",
-         "title":"Repérage de la vitre",
-         "description":"Y a-t-il des éléments contrastés (autocollants ou autres) permettant de repérer la porte vitrée ?",
-         "help_text_ui":"Présence d'éléments contrastés permettant de visualiser les parties vitrées de l'entrée",
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"entree_plain_pied",
-         "title":"Entrée de plain-pied",
-         "description":"L'entrée est-elle de plain-pied, c’est-à-dire sans marche ni ressaut supérieur à 2 cm ?",
-         "help_text_ui":"L'entrée se fait de plain-pied (sans rupture de niveau)",
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"entree_ascenseur",
-         "title":"Ascenseur/élévateur",
-         "description":"Existe-t-il un ascenseur ou un élévateur ?",
-         "help_text_ui":null,
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"entree_marches",
-         "title":"Nombre de marches",
-         "description":"Indiquer 0 s'il n'y a ni marche ni escalier",
-         "help_text_ui":null,
-         "type":"integer",
-         "example":"",
-         "contraints":{
-            "maximum":65535
-         }
-      },
-      {
-         "name":"entree_marches_reperage",
-         "title":"Repérage des marches",
-         "description":"L'escalier est-il sécurisé : nez de marche contrastés, bande d'éveil à la vigilance en haut de l'escalier, première et dernière contremarches contrastées ?",
-         "help_text_ui":"Nez de marche contrastés, bande d'éveil à la vigilance en haut de l'escalier et/ou première et dernière contremarches contrastées",
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"entree_marches_main_courante",
-         "title":"Main courante",
-         "description":"L'escalier est-il équipé d'une main courante ?",
-         "help_text_ui":null,
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"entree_marches_rampe",
-         "title":"Rampe",
-         "description":"S'il existe une rampe, est-elle fixe ou amovible ?",
-         "help_text_ui":null,
-         "type":"string",
-         "example":"",
-         "constraints":{
-            "enum": ["aucune", "fixe", "amovible"]
-         }
-      },
-      {
-         "name":"entree_dispositif_appel",
-         "title":"Dispositif d'appel à l'entrée",
-         "description":"Existe-t-il un dispositif pour permettre à quelqu'un signaler sa présence à l'entrée ?",
-         "help_text_ui":"Présence d'un dispositif comme une sonnette pour signaler sa présence",
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"entree_dispositif_appel_type",
-         "title":"Type de dispositif d'appel à l'entrée",
-         "description":"Quel(s) type(s) de dispositifs d'appel sont présents ?",
-         "help_text_ui":"Dispositifs d'appels présents",
-         "type":"array",
-         "example":"",
-         "arrayItem":{
-            "type": "string",
-            "constraints": {
-               "enum": ["bouton", "sonnette", "interphone", "visiophone"]
-            }
-         }
-      },
-      {
-         "name":"entree_balise_sonore",
-         "title":"Balise sonore à l'entrée",
-         "description":"L'entrée est-elle équipée d'une balise sonore facilitant son repérage par une personne aveugle ou malvoyante ?",
-         "help_text_ui":null,
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"entree_aide_humaine",
-         "title":"Aide humaine",
-         "description":"Présence ou possibilité d'une aide humaine au déplacement",
-         "help_text_ui":null,
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"entree_largeur_mini",
-         "title":"Largeur de la porte",
-         "description":"Si la largeur n'est pas précisément connue, indiquer une valeur minimum. Exemple : la largeur se situe entre 90 et 100 cm ; indiquer 90.",
-         "help_text_ui":"Largeur minimale de la porte d'entrée",
-         "type":"integer",
-         "example":"",
-         "constraints":{
-            "maximum":65535
-         }
-      },
-      {
-         "name":"entree_pmr",
-         "title":"Entrée spécifique PMR",
-         "description":"Existe-t-il une entrée secondaire spécifique dédiée aux personnes à mobilité réduite ?",
-         "help_text_ui":"Présence d'une entrée secondaire spécifique dédiée aux personnes à mobilité réduite",
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"entree_pmr_informations",
-         "title":"Informations complémentaires concernant l'entrée PMR",
-         "description":"Préciser ici les modalités d'accès de l'entrée spécifique PMR",
-         "help_text_ui":null,
-         "type":"string",
-         "example":""
-      },
-      {
-         "name":"accueil_visibilite",
-         "title":"Visibilité de la zone d'accueil",
-         "description":"La zone d'accueil (guichet d’accueil, caisse, secrétariat, etc) est-elle visible depuis l'entrée ?",
-         "help_text_ui":"La zone d'accueil (guichet d’accueil, caisse, secrétariat, etc) est visible depuis l'entrée",
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"accueil_personnels",
-         "title":"Personnel d'accueil",
-         "description":"En cas de présence du personnel, est-il formé ou sensibilisé à l'accueil des personnes handicapées ?",
-         "help_text_ui":null,
-         "type":"string",
-         "example":"",
-         "constraints":{
-            "enum": ["formés", "non-formés"]
-         }
-      },
-      {
-         "name":"accueil_equipements_malentendants_presence",
-         "title":"Présence d'équipements d'aide à l'audition et à la communication",
-         "description":"L'accueil est-il équipé de produits ou prestations dédiés aux personnes sourdes ou malentendantes&nbsp?",
-         "help_text_ui":"Présence de produits ou prestations dédiés aux personnes sourdes ou malentendantes",
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"accueil_equipements_malentendants",
-         "title":"Liste des équipements d'aide à l'audition et à la communication",
-         "description":"Sélectionnez les équipements ou prestations disponibles à l'accueil de l'établissement :",
-         "help_text_ui":"Équipements ou prestations disponibles",
-         "type":"array",
-         "example":"",
-         "arrayItem":{
-            "type": "string",
-            "constraints": {
-               "enum": ["autres", "bim", "lsf", "scd", "lpc"]
-            }
-         }
-      },
-      {
-         "name":"accueil_cheminement_plain_pied",
-         "title":"Cheminement de plain-pied entre l'entrée et l'accueil",
-         "description":"Le cheminement est-il de plain-pied, c’est-à-dire sans marche ni ressaut supérieur à 2 cm ? Attention, plain-pied ne signifie pas plat mais sans rupture brutale de niveau.",
-         "help_text_ui":"L'accès à cet espace se fait de plain-pied (sans rupture de niveau)",
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"accueil_cheminement_ascenseur",
-         "title":"Ascenseur/élévateur",
-         "description":"Existe-t-il un ascenseur ou un élévateur ?",
-         "help_text_ui":null,
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"accueil_cheminement_nombre_marches",
-         "title":"Nombre de marches",
-         "description":"Indiquer 0 s'il n'y a ni marche ni escalier",
-         "help_text_ui":null,
-         "type":"integer",
-         "example":"",
-         "contraints":{
-            "maximum":65535
-         }
-      },
-      {
-         "name":"accueil_cheminement_reperage_marches",
-         "title":"Repérage des marches ou de l’escalier",
-         "description":"L'escalier est-il sécurisé : nez de marche contrastés, bande d'éveil à la vigilance en haut de l'escalier, première et dernière contremarches contrastées ?",
-         "help_text_ui":"Nez de marche contrastés, bande d'éveil à la vigilance en haut de l'escalier et/ou première et dernière contremarches contrastées",
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"accueil_cheminement_main_courante",
-         "title":"Main courante",
-         "description":"L'escalier est-il équipé d'une main courante ?",
-         "help_text_ui":null,
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"accueil_cheminement_rampe",
-         "title":"Rampe",
-         "description":"S'il existe une rampe, est-elle fixe ou amovible ?",
-         "help_text_ui":"Présence et type de rampe",
-         "type":"string",
-         "example":"",
-         "contraints":{
-            "enum": ["aucune", "fixe", "amovible", "aide humaine"]
-         }
-      },
-      {
-         "name":"accueil_retrecissement",
-         "title":"Rétrécissement du cheminement",
-         "description":"Existe-t-il un ou plusieurs rétrécissements (inférieur à 80 cm) du chemin emprunté par le public pour atteindre la zone d’accueil ?",
-         "help_text_ui":"Un ou plusieurs rétrecissements (inférieurs à 80 cm) du chemin pour atteindre l'entrée",
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"accueil_prestations",
-         "title":"Prestations spécifiques proposées par l'établissement",
-         "description":"Prestations spécifiques supplémentaires proposées par l'établissement",
-         "help_text_ui":null,
-         "type":"string",
-         "example":""
-      },
-      {
-         "name":"sanitaires_presence",
-         "title":"Sanitaires",
-         "description":"Y a-t-il des sanitaires mis à disposition du public ?",
-         "help_text_ui":"Mise à disposition de sanitaires dans l'établissement",
-         "type":"boolean",
-         "example":""
-      },
-      {
-         "name":"sanitaires_adaptes",
-         "title":"Sanitaires adaptés",
-         "description":"Y a-t-il des sanitaires adaptés mis à disposition du public ?",
-         "help_text_ui":"Mise à disposition de sanitaires adaptés dans l'établissement",
-         "type":"integer",
-         "example":"",
-         "constraints":{
-            "maximum":65535
-         }
-      },
-      {
-         "name":"labels",
-         "title":"Marques ou labels",
-         "description":"Si l’établissement est entré dans une démarche volontaire de labellisation liée au handicap, quelle marques ou quels labels a-t-il obtenu ?",
-         "help_text_ui":"Marque(s) ou label(s) obtenus par l'établissement",
-         "type":"array",
-         "example":"",
-         "arrayItem":{
-            "type": "string",
-            "constraints": {
-               "enum": ["autre", "dpt", "mobalib", "th"]
-            }
-         }
-      },
-      {
-         "name":"labels_familles_handicap",
-         "title":"Famille(s) de handicap concernées(s)",
-         "description":"Quelle(s) famille(s) de handicap sont couvertes par ces marques et labels ?",
-         "help_text_ui":"Famille(s) de handicap couverte(s) par ces marques ou labels",
-         "type":"array",
-         "example":"",
-         "arrayItem":{
-            "type": "string",
-            "constraints": {
-               "enum": ["auditif", "mental", "moteur", "visuel"]
-            }
-         }
-      },
-      {
-         "name":"labels_autre",
-         "title":"Autre label",
-         "description":"Si autre, préciser le nom du label",
-         "help_text_ui":null,
-         "type":"string",
-         "example":"",
-         "constraints":{
-            "maxLength":  255
-         }
-      },
-      {
-         "name":"commentaire",
-         "title":"Commentaire libre (précisions utiles concernant l'accessibilité du bâtiment)",
-         "description":"Indiquez ici toute information supplémentaire qui vous semble pertinente pour décrire l'accessibilité du bâtiment. <br><strong>Note :</strong> ce commentaire sera affiché sur la fiche publique de l'établissement.",
-         "help_text_ui":"Informations supplémentaires",
-         "type":"string",
-         "example":""
-      },
-      {
-         "name":"registre_url",
-         "title":"Registre",
-         "description":"Si l'établissement en dispose, adresse internet (URL) à laquelle le <a href=\"https://handicap.gouv.fr/actualites/article/registre-d-accessibilite-obligatoire-un-guide-pour-les-erp\" target=\"_blank\">registre d'accessibilité</a>de l'établissement est consultable.",
-         "help_text_ui":"Si l'établissement dispose d'un registre numérique, adresse internet à laquelle celui-ci est consultable",
-         "type":"string",
-         "example":"",
-         "constraints":{
-            "maxLength": 255
-         }
-      },
-      {
-         "name":"conformite",
-         "title":"Conformité",
-         "description":"L'établissement est-il déclaré conforme ? (réservé à l'administration)",
-         "help_text_ui":"Statut réglementaire de conformité de l'établissement",
-         "type":"boolean",
-         "example":""
-      }
-   ],
-   "primaryKey":"id"
+      "example": "Valeurs possibles: auditif -> Auditif, mental -> Mental, moteur -> Moteur, visuel -> Visuel"
+    },
+    {
+      "name": "labels_autre",
+      "title": "Autre label",
+      "type": "string",
+      "example": ""
+    },
+    {
+      "name": "commentaire",
+      "title": "Informations complémentaires et prestations spécifiques",
+      "description": "Informations supplémentaires concernant l'accessibilité du bâtiment ou des prestations spécifiques proposées",
+      "type": "string",
+      "example": ""
+    },
+    {
+      "name": "registre_url",
+      "title": "Registre",
+      "description": "Si l'établissement dispose d'un registre numérique, adresse internet à laquelle celui-ci est consultable",
+      "type": "string",
+      "example": ""
+    },
+    {
+      "name": "conformite",
+      "title": "Conformité",
+      "description": "Statut réglementaire de conformité de l'établissement",
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
+    }
+  ]
 }
