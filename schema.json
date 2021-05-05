@@ -1,5 +1,5 @@
 {
-  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.js",
   "name": "acceslibre",
   "title": "Schéma des données d'accessibilité des ERPs",
   "description": "Spécification du fichier d'échange relatif aux données d'accessibilité des Établissements Recevant du Public (ERP).",
@@ -837,12 +837,11 @@
         "type": "string",
         "enum": [
           "bouton",
-          "sonnette",
           "interphone",
           "visiophone"
         ]
       },
-      "example": "Valeurs possibles: bouton -> Bouton d’appel, sonnette -> Sonnette, interphone -> Interphone, visiophone -> Visiophone"
+      "example": "Valeurs possibles: bouton -> Bouton d’appel, interphone -> Interphone, visiophone -> Visiophone"
     },
     {
       "name": "entree_balise_sonore",
