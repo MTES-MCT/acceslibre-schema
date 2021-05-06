@@ -1,5 +1,5 @@
 {
-  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.js",
+  "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
   "name": "acceslibre",
   "title": "Schéma des données d'accessibilité des ERPs",
   "description": "Spécification du fichier d'échange relatif aux données d'accessibilité des Établissements Recevant du Public (ERP).",
@@ -837,11 +837,12 @@
         "type": "string",
         "enum": [
           "bouton",
+          "sonnette",
           "interphone",
           "visiophone"
         ]
       },
-      "example": "Valeurs possibles: bouton -> Bouton d’appel, interphone -> Interphone, visiophone -> Visiophone"
+      "example": "Valeurs possibles: bouton -> Bouton d’appel, sonnette -> Sonnette, interphone -> Interphone, visiophone -> Visiophone"
     },
     {
       "name": "entree_balise_sonore",
@@ -983,14 +984,28 @@
       "title": "Manoeuvre de la porte",
       "description": "Mode d'ouverture de la porte",
       "type": "string",
-      "example": ""
+      "constraints": {
+        "enum": [
+          "battante",
+          "coulissante",
+          "tourniquet",
+          "tambour"
+        ]
+      },
+      "example": "Valeurs possibles: battante -> Porte battante, coulissante -> Porte coulissante, tourniquet -> Tourniquet, tambour -> Porte tambour"
     },
     {
       "name": "entree_porte_type",
       "title": "Type de porte",
       "description": "Type de porte",
       "type": "string",
-      "example": ""
+      "constraints": {
+        "enum": [
+          "manuelle",
+          "automatique"
+        ]
+      },
+      "example": "Valeurs possibles: manuelle -> Manuelle, automatique -> Automatique"
     },
     {
       "name": "accueil_visibilite",
