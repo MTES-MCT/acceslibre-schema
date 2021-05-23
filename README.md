@@ -63,6 +63,7 @@ Documentation des champs: [https://acceslibre.beta.gouv.fr/contrib/documentation
 ### OpenData
 
 Publication des données: [https://www.data.gouv.fr/fr/datasets/acceslibre/](https://www.data.gouv.fr/fr/datasets/acceslibre/)
+
 Notre politique Open Data: [https://fabrique-numerique.gitbook.io/acceslibre/acceslibre-en-open-data-donnees-ouvertes](https://fabrique-numerique.gitbook.io/acceslibre/acceslibre-en-open-data-donnees-ouvertes)
 
 ### Transmission des données
