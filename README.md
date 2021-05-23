@@ -55,15 +55,15 @@ facilite grandement le travail de réutilisation de ces données par des service
 
 ### Description du schéma
 
-Une description détaillée (champ par champ) du modèle de donnée est accessible ici : [](https://schema.data.gouv.fr/MTES-MCT/acceslibre-schema/latest.html). Ce schéma
+Une description détaillée (champ par champ) du modèle de donnée est accessible ici : [https://schema.data.gouv.fr/MTES-MCT/acceslibre-schema/latest.html](https://schema.data.gouv.fr/MTES-MCT/acceslibre-schema/latest.html). Ce schéma
 respecte le standard Table Schema. Pour en savoir plus, voir la page dédiée : [TableSchema](https://specs.frictionlessdata.io/table-schema/)
 
-Documentation des champs: [](https://acceslibre.beta.gouv.fr/contrib/documentation/)
+Documentation des champs: [https://acceslibre.beta.gouv.fr/contrib/documentation/](https://acceslibre.beta.gouv.fr/contrib/documentation/)
 
 ### OpenData
 
-Publication des données: [](https://www.data.gouv.fr/fr/datasets/acceslibre/)
-Notre politique Open Data: [](https://fabrique-numerique.gitbook.io/acceslibre/acceslibre-en-open-data-donnees-ouvertes)
+Publication des données: [https://www.data.gouv.fr/fr/datasets/acceslibre/](https://www.data.gouv.fr/fr/datasets/acceslibre/)
+Notre politique Open Data: [https://fabrique-numerique.gitbook.io/acceslibre/acceslibre-en-open-data-donnees-ouvertes](https://fabrique-numerique.gitbook.io/acceslibre/acceslibre-en-open-data-donnees-ouvertes)
 
 ### Transmission des données
 
