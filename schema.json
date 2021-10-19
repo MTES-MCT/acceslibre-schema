@@ -22,13 +22,13 @@
     {
       "title": "Fichier valide (CSV)",
       "name": "exemple-valide-csv",
-      "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.1/exemple-valide.csv"
+      "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.3/exemple-valide.csv"
     }
   ],
   "sources": [],
   "created": "2021-03-10",
-  "lastModified": "2021-03-10",
-  "version": "0.0.1",
+  "lastModified": "2021-10-19",
+  "version": "0.0.3",
   "contributors": [
     {
       "title": "Caleb Eliacheff",
