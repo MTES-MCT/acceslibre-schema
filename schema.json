@@ -10,7 +10,7 @@
   ],
   "countryCode": "FR",
   "homepage": "https://github.com/MTES-MCT/acceslibre-schema",
-  "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.5/schema.json",
+  "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.6/schema.json",
   "licenses": [
     {
       "title": "Etalab Licence Ouverte 2.0",
@@ -22,18 +22,18 @@
     {
       "title": "Fichier valide (CSV)",
       "name": "exemple-valide-csv",
-      "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.5/exemple-valide.csv"
+      "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.6/exemple-valide.csv"
     },
     {
       "title": "Schéma au format XLS",
       "name": "schema_format_xls",
-      "path": "https://github.com/MTES-MCT/acceslibre-schema/blob/v0.0.5/schema_format_excel.xls"
+      "path": "https://github.com/MTES-MCT/acceslibre-schema/blob/v0.0.6/schema_format_excel.xls"
     }
   ],
   "sources": [],
   "created": "2021-03-10",
-  "lastModified": "2022-02-01",
-  "version": "0.0.5",
+  "lastModified": "2022-03-29",
+  "version": "0.0.6",
   "contributors": [
     {
       "title": "Christophe Vanfrackem",
@@ -355,7 +355,7 @@
       "example": "True"
     },
     {
-      "name": "cheminement_ext_terrain_accidente",
+      "name": "cheminement_ext_terrain_stable",
       "title": "Revêtement extérieur",
       "description": "Le revêtement est stable (absence de pavés, gravillons, terre, herbe, sable, ou toute surface non stabilisée)",
       "type": "boolean",
@@ -1451,8 +1451,32 @@
       "name": "sanitaires_adaptes",
       "title": "Sanitaires adaptés",
       "description": "Des sanitaires adaptés sont mis à disposition dans l'établissement",
-      "type": "integer",
-      "example": "0"
+      "type": "boolean",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ],
+      "example": "True"
     },
     {
       "name": "labels",

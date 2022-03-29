@@ -2,6 +2,10 @@
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
 
+### Version 0.0.6 - 29-03-2022
+* Change sanitaires_adaptes field type (Integer to boolean)
+* Rename cheminement_ext_terrain_accidente to cheminement_ext_terrain_stable
+
 ### Version 0.0.5 - 01-02-2022
 * Change readme
 * Fix schema.json file with activite 
