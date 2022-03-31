@@ -2,6 +2,9 @@
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
 
+### Version 0.0.8 - 31-03-2022
+* Add activities.
+
 ### Version 0.0.7 - 31-03-2022
 * Change xls file and update link for json schema.
 
