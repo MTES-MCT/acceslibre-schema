@@ -10,7 +10,7 @@
   ],
   "countryCode": "FR",
   "homepage": "https://github.com/MTES-MCT/acceslibre-schema",
-  "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.6/schema.json",
+  "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.7/schema.json",
   "licenses": [
     {
       "title": "Etalab Licence Ouverte 2.0",
@@ -22,18 +22,18 @@
     {
       "title": "Fichier valide (CSV)",
       "name": "exemple-valide-csv",
-      "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.6/exemple-valide.csv"
+      "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.7/exemple-valide.csv"
     },
     {
       "title": "Schéma au format XLS",
       "name": "schema_format_xls",
-      "path": "https://github.com/MTES-MCT/acceslibre-schema/blob/v0.0.6/schema_format_excel.xls"
+      "path": "https://github.com/MTES-MCT/acceslibre-schema/blob/v0.0.7/schema_format_excel.xls"
     }
   ],
   "sources": [],
   "created": "2021-03-10",
-  "lastModified": "2022-03-29",
-  "version": "0.0.6",
+  "lastModified": "2022-03-31",
+  "version": "0.0.7",
   "contributors": [
     {
       "title": "Christophe Vanfrackem",
