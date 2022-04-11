@@ -2,6 +2,9 @@
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
 
+### Version 0.0.9 - 11-04-2022
+* Add constraints value for field 'activite'.
+
 ### Version 0.0.8 - 31-03-2022
 * Add activities.
 
