@@ -995,7 +995,7 @@
     {
       "name": "cheminement_ext_sens_marches",
       "title": "Sens de circulation de l'escalier",
-      "description": "Sens de circulation des marches ou de l'escalier. Valeurs possibles : montant -> Montant, descendant -> Descendant",
+      "description": "Sens de circulation des marches ou de l'escalier. Valeurs possibles : montant -> Montant, descendant -> Descendant.",
       "type": "string",
       "constraints": {
         "enum": [
@@ -1039,7 +1039,7 @@
     {
       "name": "cheminement_ext_rampe",
       "title": "Rampe",
-      "description": "Présence d'une rampe fixe ou amovible. Valeurs possibles : aucune -> Aucune, fixe -> Fixe, amovible -> Amovible",
+      "description": "Présence d'une rampe fixe ou amovible. Valeurs possibles : aucune -> Aucune, fixe -> Fixe, amovible -> Amovible.",
       "type": "string",
       "constraints": {
         "enum": [
@@ -1084,7 +1084,7 @@
     {
       "name": "cheminement_ext_pente_degre_difficulte",
       "title": "Degré de difficulté de la pente",
-      "description": "Difficulté de la pente. Valeurs possibles : légère -> Légère, importante -> Importante",
+      "description": "Difficulté de la pente. Valeurs possibles : légère -> Légère, importante -> Importante.",
       "type": "string",
       "constraints": {
         "enum": [
