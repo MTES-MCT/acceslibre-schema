@@ -1,2 +1,2 @@
-frictionless==4.10
+frictionless==4.40.3
 click==8.0.4
