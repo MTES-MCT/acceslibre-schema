@@ -2,6 +2,10 @@
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
 
+### Version 0.0.11 - 13-12-2022
+* Add audiodescription fields
+* Add new activities
+
 ### Version 0.0.10 - 26-09-2022
 * Reshape schema.json to accept valid examples..
 
@@ -20,7 +24,7 @@ Ce fichier répertorie les changements entre différentes versions d'un schéma.
 
 ### Version 0.0.5 - 01-02-2022
 * Change readme
-* Fix schema.json file with activite 
+* Fix schema.json file with activite
 
 ### Version 0.0.4 - 19-01-2022
 Fix type of accueil_cheminement_rampe field.
