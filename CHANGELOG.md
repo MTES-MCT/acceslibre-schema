@@ -2,6 +2,9 @@
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
 
+### Version 0.0.12 - 04-01-2023
+* Add new activities
+
 ### Version 0.0.11 - 13-12-2022
 * Add audiodescription fields
 * Add new activities
