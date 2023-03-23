@@ -2283,14 +2283,6 @@
       "example": "https://handicap.gouv.fr/actualites/article/registre-d-accessibilite-obligatoire-un-guide-pour-les-erp"
     },
     {
-      "name": "web_url",
-      "title": "Web URL",
-      "description": "Adresse internet de la fiche de l'établissement sur acceslibre",
-      "type": "string",
-      "format": "uri",
-      "example": "https://acceslibre.beta.gouv.fr/app/69-lyon/a/boulangerie/erp/slug-erp/"
-    },
-    {
       "name": "conformite",
       "title": "Conformité",
       "description": "Statut réglementaire de conformité de l'établissement",
