@@ -2,6 +2,10 @@
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
 
+### Version 0.0.13 - 05-09-2023
+* Add new fields for hostels, room accessibility.
+* Add new activities
+
 ### Version 0.0.12 - 04-01-2023
 * Add new activities
 
