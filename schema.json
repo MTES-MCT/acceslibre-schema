@@ -10,7 +10,7 @@
   ],
   "countryCode": "FR",
   "homepage": "https://github.com/MTES-MCT/acceslibre-schema",
-  "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.14/schema.json",
+  "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.10/schema.json",
   "licenses": [
     {
       "title": "Etalab Licence Ouverte 2.0",
@@ -22,18 +22,18 @@
     {
       "title": "Fichier valide (CSV)",
       "name": "exemple-valide-csv",
-      "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.14/exemple-valide.csv"
+      "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.10/exemple-valide.csv"
     },
     {
       "title": "Schéma au format XLS",
       "name": "schema_format_xls",
-      "path": "https://github.com/MTES-MCT/acceslibre-schema/blob/v0.0.14/schema_format_excel.xls"
+      "path": "https://github.com/MTES-MCT/acceslibre-schema/blob/v0.0.10/schema_format_excel.xls"
     }
   ],
   "sources": [],
   "created": "2021-03-10",
-  "lastModified": "2023-06-19",
-  "version": "0.0.14",
+  "lastModified": "2024-03-21",
+  "version": "0.0.15",
   "contributors": [
     {
       "title": "Christophe Vanfrackem",
@@ -56,6 +56,12 @@
     {
       "title": "Marie-Laure Vernay",
       "email": "marielaure.vernay@beta.gouv.fr",
+      "organisation": "MTES-MCT",
+      "role": "author"
+    },
+    {
+      "title": "Antonin Morel",
+      "email": "antonin.morel@beta.gouv.fr",
       "organisation": "MTES-MCT",
       "role": "author"
     }
@@ -169,367 +175,6 @@
       "title": "Activité",
       "description": "Domaine d'activité de l'ERP",
       "type": "string",
-      "constraints": {
-        "enum": [
-          "Accessoires",
-          "Accompagnement personnes agees",
-          "Accrobranche",
-          "Achat or",
-          "Administration publique",
-          "Aéroport",
-          "Afpa",
-          "Agence départementale d'information sur le logement",
-          "Agence de publicité",
-          "Agence de travail temporaire",
-          "Agence de voyage",
-          "Agence immobilière",
-          "Agence matrimoniale",
-          "Agence postale",
-          "Aide à la personne",
-          "Aide sociale à l'enfance : action éducative",
-          "Ambulances",
-          "Aménagement maison : cuisine salle de bain salon",
-          "Anesthésie",
-          "Animalerie",
-          "Antiquaire",
-          "Apiculteur",
-          "Aquarium",
-          "Architecte",
-          "Arène",
-          "Armurerie coutellerie",
-          "Art",
-          "Artisanat",
-          "Arts de la table",
-          "Association",
-          "Association aide aux victimes",
-          "Association de gestion du fonds pour l'insertion professionnelle des personnes handicapées",
-          "Assurance",
-          "Athlétisme",
-          "Audio prothésiste",
-          "Auditorium et salle de conférence",
-          "Auto école",
-          "Autre",
-          "Autres établissements pour adultes et familles en difficulté",
-          "Avocat",
-          "Banques, caisses d'épargne",
-          "Barbier",
-          "Bar tabac",
-          "Bâtiment d'accueil",
-          "Bazar",
-          "Bibliothèque médiathèque",
-          "Bien-être",
-          "Bijouterie joaillerie",
-          "Biscuiterie",
-          "Blanchisserie teinturerie",
-          "Boucherie / commerce de viande",
-          "Boulangerie",
-          "Boulangerie Pâtisserie",
-          "Boulodrome",
-          "Boutique de mariage",
-          "Bowling",
-          "Bricolage, matériaux, travaux",
-          "Brocante",
-          "Brûlerie",
-          "Bureau de douane",
-          "Bureau de poste",
-          "Café, bar, brasserie",
-          "Cafés et thés",
-          "Caisse d'allocations familiales (caf)",
-          "Camping caravaning",
-          "Cantine",
-          "Cardiologie",
-          "Carrosserie",
-          "Casino",
-          "Caviste / commerce de détail de boissons",
-          "Centrale nucléaire",
-          "Centre commercial",
-          "Centre culturel",
-          "Centre de gestion de la fonction publique territoriale",
-          "Centre de loisirs",
-          "Centre de protection maternelle et infantile (pmi)",
-          "Centre de ressources et d'information",
-          "Centre de vacances",
-          "Centre de vaccination",
-          "Centre d'examen",
-          "Centre d’information et d’orientation",
-          "Centre d'information sur les droits des femmes et des familles",
-          "Centre équestre",
-          "Centre médical",
-          "Centre national de la fonction publique territoriale",
-          "Centre religieux",
-          "Centre social",
-          "Chambre agriculture",
-          "Chambre de commerce et d'industrie",
-          "Chambre metier",
-          "Chambres d'hôtes, gîte, pension",
-          "Chapeaux et couvre-chefs",
-          "Charcuterie",
-          "Château",
-          "Chaussures",
-          "Chenil, fourrière",
-          "Chirurgie",
-          "Chirurgien dentiste",
-          "Chocolatier",
-          "Cigarette électronique",
-          "Cimetière",
-          "Cinéma",
-          "Circuit sportif deux roues / voiture",
-          "Clinique",
-          "Coiffure",
-          "Collectivité territoriale",
-          "Collège",
-          "Commerce",
-          "Commerce automobile",
-          "Commerce bio",
-          "Commissariat de Police",
-          "Commission conciliation",
-          "Communauté de communes",
-          "Comptable expert-comptable",
-          "Concessionnaire automobile",
-          "Confiserie",
-          "Conservatoire et école de musique",
-          "Construction de maisons, immeubles",
-          "Contrôle technique auto",
-          "Coopérative agricole",
-          "Cordonnerie serrurerie",
-          "Courtier",
-          "Coworking",
-          "Crèche",
-          "Crèmerie Fromagerie",
-          "Cure thermale",
-          "Cycle vente et entretien",
-          "Cyclisme",
-          "Déchetterie",
-          "Décoration Design",
-          "Déménageur",
-          "Dermatologie vénéréologie",
-          "Direction départementale de la protection des populations",
-          "Direction départementale de l'emploi, du travail, des solidarités et de la protection des populations",
-          "Discothèque",
-          "Disquaire",
-          "Distribution spécialisée / commerce de gros",
-          "Droguerie",
-          "Ecole de danse",
-          "École élémentaire",
-          "École maternelle",
-          "École primaire (regroupement maternelle et élémentaire)",
-          "EHPAD",
-          "Électricien",
-          "Électroménager et matériel audio-vidéo",
-          "Emploi, formation",
-          "Encadreur enlumineur",
-          "Endocrinologue",
-          "Épicerie",
-          "Epicerie fine",
-          "Équipements du foyer",
-          "Equipement sportif",
-          "Ergothérapeute",
-          "Espace collaboratif",
-          "Espace numérique",
-          "Espace vert et naturel",
-          "Etablissement de prévention",
-          "Établissement de santé",
-          "Établissement militaire",
-          "Etablissement pénitentiaire",
-          "Fédération départementale pour la pêche et la protection du milieu aquatique",
-          "Fleuriste",
-          "Friperie",
-          "Fruits et légumes",
-          "Galerie d'art",
-          "Garage automobile",
-          "Garderie",
-          "Gare avec desserte train à grande vitesse (TAGV)",
-          "Gare routière",
-          "Gare sans desserte train à grande vitesse (TAGV)",
-          "Gastro-entérologie hépatologie",
-          "Gendarmerie",
-          "Géomètre",
-          "Glacier",
-          "Greffe des associations",
-          "Guichet france services",
-          "Gymnase",
-          "Gynécologie",
-          "Hématologie",
-          "Herboristerie naturopathie",
-          "Hôpital",
-          "Horlogerie",
-          "Hôtel",
-          "Hôtel restaurant",
-          "Huissier",
-          "Hypermarché",
-          "Hypnothérapeute",
-          "Immobilier",
-          "Imprimerie photocopie reliure",
-          "Infirmier",
-          "Information Touristique",
-          "Informatique",
-          "Institut de formation",
-          "Instruments et matériel de musique",
-          "Jardin botanique et/ou zoologique",
-          "Jardinerie",
-          "Jeux jouets",
-          "Jeux vidéo",
-          "Karaoké",
-          "Kiosque (théâtre, pizza, journaux)",
-          "Laboratoire d'analyse médicale",
-          "Laverie",
-          "Librairie",
-          "Lieu de culte",
-          "Lieu de visite",
-          "Lingerie sous-vêtements",
-          "Literie",
-          "Location articles loisirs et sport",
-          "Location de matériels",
-          "Location véhicules",
-          "Loisirs créatifs",
-          "Luminaire",
-          "Lycée",
-          "Magasin de bois de chauffage",
-          "Magasin de cbd",
-          "Magasin de souvenirs",
-          "Magasin de tissus",
-          "Mairie",
-          "Maison départementale des personnes handicapées",
-          "Maison de santé ou centre de santé",
-          "Maison de services au public",
-          "Marché",
-          "Maroquinerie sellerie articles de voyage",
-          "Massages",
-          "Masseur kinésithérapeute",
-          "Matériel de pêche",
-          "Médecine du travail",
-          "Médecin généraliste",
-          "Menuiserie, ébénisterie",
-          "Mercerie",
-          "Meubles ameublement",
-          "Mission d'accueil et d'information des associations",
-          "Mission locale pour l'insertion professionnelle et sociale des jeunes",
-          "Monument historique",
-          "Motocycle vente et entretien",
-          "Musée",
-          "Musique",
-          "Neurologie",
-          "Notaire",
-          "Numérique",
-          "Office du tourisme",
-          "Opéra",
-          "Ophtalmologie",
-          "Opticien",
-          "Ordre des avocats",
-          "Organisation patronale, professionnelle, syndicale",
-          "Organisme de conseil",
-          "Orthodontie",
-          "Orthopédie",
-          "Orthophonie",
-          "Orthoptie",
-          "Ostéopathie",
-          "Oto-rhino-laryngologie",
-          "Papeterie, presse, journaux",
-          "Parc",
-          "Parc d’attraction",
-          "Parc des expositions",
-          "Parfumerie beauté",
-          "Parking & stationnement",
-          "Patinoire",
-          "Pâtisserie",
-          "Pédiatrie",
-          "Pédicure-podologue",
-          "Pépinière",
-          "Personnes âgées : foyer restaurant",
-          "Personnes âgées : hébergement",
-          "Pharmacie",
-          "Photographie",
-          "Piscine",
-          "Plage",
-          "Plateaux et terrains de jeux extérieurs",
-          "Plomberie, chauffage",
-          "Pneumologie",
-          "Point accueil numerique",
-          "Point conseil budget",
-          "Point d'information local dédié aux personnes âgées",
-          "Point information jeunesse",
-          "Point justice",
-          "Poissonnerie / commerce de poissons, crustacés et mollusques",
-          "Pompes funèbres",
-          "Port",
-          "Poterie verrerie céramique",
-          "Pressing, nettoyage",
-          "Primeur",
-          "Produits de terroir",
-          "Produits surgelés",
-          "Profession libérale",
-          "Psychologie, Psychiatrie",
-          "Psychomotricien",
-          "Puériculture",
-          "Radiodiagnostic et imagerie médicale",
-          "Refuge animalier",
-          "Rempailleur tapissier chaises fauteuils",
-          "Réparation auto et de matériel agricole",
-          "Résidence, foyer",
-          "Ressourcerie",
-          "Restaurant",
-          "Restaurant scolaire",
-          "Restauration rapide",
-          "Retouche",
-          "Retraite",
-          "Revêtements murs et sols",
-          "Rhumatologie",
-          "Sage-femme",
-          "Salle de combat",
-          "Salle de concert",
-          "Salle de danse",
-          "Salle de jeux",
-          "Salle de réception",
-          "Salle des fêtes",
-          "Salle de spectacle",
-          "Salle multisports",
-          "Salle non spécialisée",
-          "Salles de remise en forme",
-          "Salle spécialisée",
-          "Salon de thé",
-          "Sécurité sociale, mutuelle santé",
-          "Service ou aide à domicile",
-          "Services techniques",
-          "Sex shop",
-          "Skatepark",
-          "Soins de beauté",
-          "Sophrologue",
-          "Spa",
-          "Sports et loisirs",
-          "Sports nautiques",
-          "Stade",
-          "Station lavage auto",
-          "Station service",
-          "Stomatologie",
-          "Supérette",
-          "Supermarché",
-          "Syndic, gérance immo",
-          "Tabac",
-          "Tatouage Piercing",
-          "Taxi",
-          "Taxidermie",
-          "Téléphonie",
-          "Tennis",
-          "Textile hors habillement",
-          "Thalassothérapie",
-          "Théâtre",
-          "Toilettes publiques",
-          "Toiletteur",
-          "Traiteur",
-          "Transport",
-          "Trésorerie",
-          "Tribunal",
-          "Université ou école supérieure",
-          "Urologie",
-          "Vente à distance",
-          "Vente d'articles de sport",
-          "Vente de matériel et équipement industriels",
-          "Vente de matériel médical",
-          "Vente de matériel pour piscine",
-          "Vêtements",
-          "Vétérinaire"
-        ]
-      },
       "arrayItem": {
         "type": "string",
         "enum": [
@@ -537,17 +182,16 @@
           "Accompagnement personnes agees",
           "Accrobranche",
           "Achat or",
+          "Achat, vente, réparation de matériel informatique et téléphonique",
           "Administration publique",
-          "Aéroport",
-          "Afpa",
+          "Aéroport, aérodrome",
           "Agence départementale d'information sur le logement",
           "Agence de publicité",
           "Agence de travail temporaire",
           "Agence de voyage",
+          "Agence événementielle",
           "Agence immobilière",
           "Agence matrimoniale",
-          "Agence postale",
-          "Aide à la personne",
           "Aide sociale à l'enfance : action éducative",
           "Ambulances",
           "Aménagement maison : cuisine salle de bain salon",
@@ -564,15 +208,16 @@
           "Arts de la table",
           "Association",
           "Association aide aux victimes",
-          "Association de gestion du fonds pour l'insertion professionnelle des personnes handicapées",
           "Assurance",
           "Athlétisme",
+          "Auberge de jeunesse, centre international de séjour",
           "Audio prothésiste",
           "Auditorium et salle de conférence",
           "Auto école",
           "Autre",
           "Autres établissements pour adultes et familles en difficulté",
           "Avocat",
+          "Bailleur social",
           "Banques, caisses d'épargne",
           "Barbier",
           "Bar tabac",
@@ -580,22 +225,21 @@
           "Bazar",
           "Bibliothèque médiathèque",
           "Bien-être",
+          "Bijouterie fantaisie",
           "Bijouterie joaillerie",
           "Biscuiterie",
           "Blanchisserie teinturerie",
           "Boucherie / commerce de viande",
-          "Boulangerie",
           "Boulangerie Pâtisserie",
           "Boulodrome",
           "Boutique de mariage",
           "Bowling",
           "Bricolage, matériaux, travaux",
           "Brocante",
-          "Brûlerie",
+          "Bureau de change",
           "Bureau de douane",
           "Bureau de poste",
           "Café, bar, brasserie",
-          "Cafés et thés",
           "Caisse d'allocations familiales (caf)",
           "Camping caravaning",
           "Cantine",
@@ -622,8 +266,8 @@
           "Centre social",
           "Chambre agriculture",
           "Chambre de commerce et d'industrie",
+          "Chambre d'hôtes, gîte, pension, meublé de tourisme",
           "Chambre metier",
-          "Chambres d'hôtes, gîte, pension",
           "Chapeaux et couvre-chefs",
           "Charcuterie",
           "Château",
@@ -637,6 +281,7 @@
           "Cinéma",
           "Circuit sportif deux roues / voiture",
           "Clinique",
+          "Club de sport",
           "Coiffure",
           "Collectivité territoriale",
           "Collège",
@@ -645,12 +290,11 @@
           "Commerce bio",
           "Commissariat de Police",
           "Commission conciliation",
-          "Communauté de communes",
           "Comptable expert-comptable",
           "Concessionnaire automobile",
           "Confiserie",
           "Conservatoire et école de musique",
-          "Construction de maisons, immeubles",
+          "Construction, rénovation",
           "Contrôle technique auto",
           "Coopérative agricole",
           "Cordonnerie serrurerie",
@@ -658,7 +302,6 @@
           "Coworking",
           "Crèche",
           "Crèmerie Fromagerie",
-          "Cure thermale",
           "Cycle vente et entretien",
           "Cyclisme",
           "Déchetterie",
@@ -681,6 +324,7 @@
           "Emploi, formation",
           "Encadreur enlumineur",
           "Endocrinologue",
+          "Entretien de piscine",
           "Épicerie",
           "Epicerie fine",
           "Équipements du foyer",
@@ -693,16 +337,19 @@
           "Établissement de santé",
           "Établissement militaire",
           "Etablissement pénitentiaire",
+          "Établissement thermal",
+          "Evénement culturel",
           "Fédération départementale pour la pêche et la protection du milieu aquatique",
+          "Ferme",
           "Fleuriste",
           "Friperie",
           "Fruits et légumes",
           "Galerie d'art",
           "Garage automobile",
           "Garderie",
-          "Gare avec desserte train à grande vitesse (TAGV)",
           "Gare routière",
-          "Gare sans desserte train à grande vitesse (TAGV)",
+          "Gare sncf",
+          "Gare tgv",
           "Gastro-entérologie hépatologie",
           "Gendarmerie",
           "Géomètre",
@@ -711,6 +358,7 @@
           "Guichet france services",
           "Gymnase",
           "Gynécologie",
+          "Hébergement insolite",
           "Hématologie",
           "Herboristerie naturopathie",
           "Hôpital",
@@ -742,12 +390,14 @@
           "Literie",
           "Location articles loisirs et sport",
           "Location de matériels",
+          "Location saisonnière",
           "Location véhicules",
           "Loisirs créatifs",
           "Luminaire",
           "Lycée",
           "Magasin de bois de chauffage",
           "Magasin de cbd",
+          "Magasin de déguisements",
           "Magasin de souvenirs",
           "Magasin de tissus",
           "Mairie",
@@ -773,6 +423,7 @@
           "Neurologie",
           "Notaire",
           "Numérique",
+          "Oenotourisme",
           "Office du tourisme",
           "Opéra",
           "Ophtalmologie",
@@ -790,10 +441,9 @@
           "Parc",
           "Parc d’attraction",
           "Parc des expositions",
-          "Parfumerie beauté",
+          "Parfumerie, cosmétique",
           "Parking & stationnement",
           "Patinoire",
-          "Pâtisserie",
           "Pédiatrie",
           "Pédicure-podologue",
           "Pépinière",
@@ -801,8 +451,8 @@
           "Personnes âgées : hébergement",
           "Pharmacie",
           "Photographie",
-          "Piscine",
-          "Plage",
+          "Piscine, centre aquatique",
+          "Plage, zone de baignade",
           "Plateaux et terrains de jeux extérieurs",
           "Plomberie, chauffage",
           "Pneumologie",
@@ -827,13 +477,13 @@
           "Refuge animalier",
           "Rempailleur tapissier chaises fauteuils",
           "Réparation auto et de matériel agricole",
+          "Résidence de tourisme",
           "Résidence, foyer",
           "Ressourcerie",
           "Restaurant",
           "Restaurant scolaire",
           "Restauration rapide",
           "Retouche",
-          "Retraite",
           "Revêtements murs et sols",
           "Rhumatologie",
           "Sage-femme",
@@ -841,12 +491,12 @@
           "Salle de concert",
           "Salle de danse",
           "Salle de jeux",
-          "Salle de réception",
+          "Salle de remise en forme",
+          "Salle de réunion ou réception",
           "Salle des fêtes",
           "Salle de spectacle",
           "Salle multisports",
           "Salle non spécialisée",
-          "Salles de remise en forme",
           "Salle spécialisée",
           "Salon de thé",
           "Sécurité sociale, mutuelle santé",
@@ -854,7 +504,7 @@
           "Services techniques",
           "Sex shop",
           "Skatepark",
-          "Soins de beauté",
+          "Soins de beauté, esthétique",
           "Sophrologue",
           "Spa",
           "Sports et loisirs",
@@ -875,6 +525,7 @@
           "Textile hors habillement",
           "Thalassothérapie",
           "Théâtre",
+          "Tiers lieu",
           "Toilettes publiques",
           "Toiletteur",
           "Traiteur",
@@ -885,14 +536,16 @@
           "Urologie",
           "Vente à distance",
           "Vente d'articles de sport",
+          "Vente de cafés et thés",
           "Vente de matériel et équipement industriels",
           "Vente de matériel médical",
           "Vente de matériel pour piscine",
           "Vêtements",
-          "Vétérinaire"
+          "Vétérinaire",
+          "Village de vacances"
         ]
       },
-      "example": "Mairie"
+      "example": ""
     },
     {
       "name": "transport_station_presence",
@@ -1214,7 +867,7 @@
     {
       "name": "cheminement_ext_sens_marches",
       "title": "Sens de circulation de l'escalier",
-      "description": "Sens de circulation des marches ou de l'escalier. Valeurs possibles : montant -> Montant, descendant -> Descendant.",
+      "description": "Sens de circulation des marches ou de l'escalier. Valeurs possibles: montant -> Montant, descendant -> Descendant",
       "type": "string",
       "constraints": {
         "enum": [
@@ -1222,7 +875,7 @@
           "descendant"
         ]
       },
-      "example": "descendant"
+      "example": "[\"montant\", \"descendant\"]"
     },
     {
       "name": "cheminement_ext_main_courante",
@@ -1258,7 +911,7 @@
     {
       "name": "cheminement_ext_rampe",
       "title": "Rampe",
-      "description": "Présence d'une rampe fixe ou amovible. Valeurs possibles : aucune -> Aucune, fixe -> Fixe, amovible -> Amovible.",
+      "description": "Présence d'une rampe fixe ou amovible. Valeurs possibles: aucune -> Aucune, fixe -> Fixe, amovible -> Amovible",
       "type": "string",
       "constraints": {
         "enum": [
@@ -1267,7 +920,7 @@
           "amovible"
         ]
       },
-      "example": "amovible"
+      "example": "[\"aucune\", \"fixe\", \"amovible\"]"
     },
     {
       "name": "cheminement_ext_pente_presence",
@@ -1303,7 +956,7 @@
     {
       "name": "cheminement_ext_pente_degre_difficulte",
       "title": "Degré de difficulté de la pente",
-      "description": "Difficulté de la pente. Valeurs possibles : légère -> Légère, importante -> Importante.",
+      "description": "Difficulté de la pente. Valeurs possibles: légère -> Légère, importante -> Importante",
       "type": "string",
       "constraints": {
         "enum": [
@@ -1311,12 +964,12 @@
           "importante"
         ]
       },
-      "example": "importante"
+      "example": "[\"l\\u00e9g\\u00e8re\", \"importante\"]"
     },
     {
       "name": "cheminement_ext_pente_longueur",
       "title": "Longueur de la pente",
-      "description": "Longueur de la pente. Valeurs possibles : courte -> < 0,5 mètres, moyenne -> entre 0,5 et 2 mètres, longue -> > 2 mètres.",
+      "description": "Longueur de la pente. Valeurs possibles: courte -> < 0,5 mètres, moyenne -> entre 0,5 et 2 mètres, longue -> > 2 mètres",
       "type": "string",
       "constraints": {
         "enum": [
@@ -1325,12 +978,12 @@
           "longue"
         ]
       },
-      "example": "moyenne"
+      "example": "[\"courte\", \"moyenne\", \"longue\"]"
     },
     {
       "name": "cheminement_ext_devers",
       "title": "Dévers",
-      "description": "Dévers ou inclinaison transversale du chemin. Valeurs possibles : aucun -> Aucun, léger -> Léger, important -> Important.",
+      "description": "Dévers ou inclinaison transversale du chemin. Valeurs possibles: aucun -> Aucun, léger -> Léger, important -> Important",
       "type": "string",
       "constraints": {
         "enum": [
@@ -1339,7 +992,7 @@
           "important"
         ]
       },
-      "example": "important"
+      "example": "[\"aucun\", \"l\\u00e9ger\", \"important\"]"
     },
     {
       "name": "cheminement_ext_bande_guidage",
@@ -1375,7 +1028,7 @@
     {
       "name": "cheminement_ext_retrecissement",
       "title": "Rétrécissement du chemin",
-      "description": "Un ou plusieurs rétrécissements inférieurs à 90 centimètres du chemin pour atteindre l'entrée",
+      "description": "Un ou plusieurs rétrécissements inférieurs à 90 centimètres du chemin pour atteindre la zone d'accueil",
       "type": "boolean",
       "trueValues": [
         "true",
@@ -1630,7 +1283,7 @@
     {
       "name": "entree_marches_rampe",
       "title": "Rampe",
-      "description": "Présence d'une rampe fixe ou amovible. Valeurs possibles : aucune -> Aucune, fixe -> Fixe, amovible -> Amovible.",
+      "description": "Présence d'une rampe fixe ou amovible. Valeurs possibles: aucune -> Aucune, fixe -> Fixe, amovible -> Amovible",
       "type": "string",
       "constraints": {
         "enum": [
@@ -1639,12 +1292,12 @@
           "amovible"
         ]
       },
-      "example": "amovible"
+      "example": "[\"aucune\", \"fixe\", \"amovible\"]"
     },
     {
       "name": "entree_marches_sens",
       "title": "Sens de circulation de l'escalier",
-      "description": "Sens de circulation des marches ou de l'escalier. Valeurs possibles : montant -> Montant, descendant -> Descendant.",
+      "description": "Sens de circulation des marches ou de l'escalier. Valeurs possibles: montant -> Montant, descendant -> Descendant",
       "type": "string",
       "constraints": {
         "enum": [
@@ -1652,7 +1305,7 @@
           "descendant"
         ]
       },
-      "example": "descendant"
+      "example": "[\"montant\", \"descendant\"]"
     },
     {
       "name": "entree_dispositif_appel",
@@ -1688,7 +1341,7 @@
     {
       "name": "entree_dispositif_appel_type",
       "title": "Type de dispositif d'appel à l'entrée",
-      "description": "Dispositifs d'appels présents. Valeurs possibles : bouton -> Bouton d'appel, interphone -> Interphone, visiophone -> Visiophone.",
+      "description": "Dispositifs d'appels présents. Valeurs possibles: bouton -> Bouton d'appel, interphone -> Interphone, visiophone -> Visiophone",
       "type": "array",
       "arrayItem": {
         "type": "string",
@@ -1698,10 +1351,7 @@
           "visiophone"
         ]
       },
-      "example": [
-        "bouton",
-        "visiophone"
-      ]
+      "example": "[\"bouton\", \"interphone\", \"visiophone\"]"
     },
     {
       "name": "entree_balise_sonore",
@@ -1837,7 +1487,7 @@
     {
       "name": "entree_porte_manoeuvre",
       "title": "Manoeuvre de la porte",
-      "description": "Mode d'ouverture de la porte. Valeurs possibles : battante -> Porte battante, coulissante -> Porte coulissante, tourniquet -> Tourniquet, tambour -> Porte tambour.",
+      "description": "Mode d'ouverture de la porte. Valeurs possibles: battante -> Porte battante, coulissante -> Porte coulissante, tourniquet -> Tourniquet, tambour -> Porte tambour",
       "type": "string",
       "constraints": {
         "enum": [
@@ -1847,12 +1497,12 @@
           "tambour"
         ]
       },
-      "example": "coulissante"
+      "example": "[\"battante\", \"coulissante\", \"tourniquet\", \"tambour\"]"
     },
     {
       "name": "entree_porte_type",
       "title": "Type de porte",
-      "description": "Type de porte. Valeurs possibles : manuelle -> Manuelle, automatique -> Automatique.",
+      "description": "Type de porte. Valeurs possibles: manuelle -> Manuelle, automatique -> Automatique",
       "type": "string",
       "constraints": {
         "enum": [
@@ -1860,7 +1510,7 @@
           "automatique"
         ]
       },
-      "example": "automatique"
+      "example": "[\"manuelle\", \"automatique\"]"
     },
     {
       "name": "accueil_visibilite",
@@ -1896,7 +1546,7 @@
     {
       "name": "accueil_personnels",
       "title": "Personnel d'accueil",
-      "description": "Personnel à l'accueil des personnes handicapées. Valeurs possibles : aucun -> Aucun personnel, formés -> Personnels sensibilisés ou formés, non-formés -> Personnels non-formés.",
+      "description": "Personnel à l'accueil des personnes handicapées. Valeurs possibles: aucun -> Aucun personnel, formés -> Personnels sensibilisés ou formés, non-formés -> Personnels non-formés",
       "type": "string",
       "constraints": {
         "enum": [
@@ -1905,12 +1555,12 @@
           "non-formés"
         ]
       },
-      "example": "non-formés"
+      "example": "[\"aucun\", \"form\\u00e9s\", \"non-form\\u00e9s\"]"
     },
     {
       "name": "accueil_audiodescription_presence",
       "title": "Audiodescription",
-      "description": "L'établissement propose l'audiodescription.",
+      "description": "L'établissement propose l'audiodescription",
       "type": "boolean",
       "trueValues": [
         "true",
@@ -1940,22 +1590,19 @@
     },
     {
       "name": "accueil_audiodescription",
-      "title": "Liste des équipements pour l'audiodescription",
-      "description": "Équipements disponibles",
+      "title": "Type d'équipements pour l'audiodescription",
+      "description": "Équipements disponibles. Valeurs possibles: avec_équipement_permanent -> avec équipement permanent, casques et boîtiers disponibles à l’accueil, avec_app -> avec équipement permanent nécessitant le téléchargement d'une application sur smartphone, avec_équipement_occasionnel -> avec équipement occasionnel selon la programmation, sans_équipement -> sans équipement, audiodescription audible par toute la salle (selon la programmation)",
       "type": "array",
       "arrayItem": {
         "type": "string",
         "enum": [
           "avec_équipement_permanent",
-          "app",
+          "avec_app",
           "avec_équipement_occasionnel",
           "sans_équipement"
         ]
       },
-      "example": [
-        "app",
-        "avec_équipement_occasionnel"
-      ]
+      "example": "[\"avec_\\u00e9quipement_permanent\", \"avec_app\", \"avec_\\u00e9quipement_occasionnel\", \"sans_\\u00e9quipement\"]"
     },
     {
       "name": "accueil_equipements_malentendants_presence",
@@ -1991,7 +1638,7 @@
     {
       "name": "accueil_equipements_malentendants",
       "title": "Liste des équipements d'aide à l'audition et à la communication",
-      "description": "Équipements ou prestations disponibles. Valeurs possibles : bim -> Boucle à induction magnétique fixe, bmp -> Boucle à induction magnétique portative, lsf -> Langue des signes française, lpc -> Langue Française Parlée Complétée (LFPC), sts -> Sous-Titrage ou Transcription Simultanée, autres -> Autres.",
+      "description": "Équipements ou prestations disponibles. Valeurs possibles: bim -> boucle à induction magnétique fixe, bmp -> boucle à induction magnétique portative, lsf -> langue des signes française (LSF), lpc -> langue française parlée complétée (LFPC), sts -> sous-titrage ou transcription simultanée, autres -> autres",
       "type": "array",
       "arrayItem": {
         "type": "string",
@@ -2004,10 +1651,7 @@
           "autres"
         ]
       },
-      "example": [
-        "bim",
-        "bmp"
-      ]
+      "example": "[\"bim\", \"bmp\", \"lsf\", \"lpc\", \"sts\", \"autres\"]"
     },
     {
       "name": "accueil_cheminement_plain_pied",
@@ -2143,7 +1787,7 @@
     {
       "name": "accueil_cheminement_rampe",
       "title": "Rampe",
-      "description": "Présence d'une rampe fixe ou amovible. Valeurs possibles : aucune -> Aucune, fixe -> Fixe, amovible -> Amovible.",
+      "description": "Présence d'une rampe fixe ou amovible. Valeurs possibles: aucune -> Aucune, fixe -> Fixe, amovible -> Amovible",
       "type": "string",
       "constraints": {
         "enum": [
@@ -2152,12 +1796,12 @@
           "amovible"
         ]
       },
-      "example": "fixe"
+      "example": "[\"aucune\", \"fixe\", \"amovible\"]"
     },
     {
       "name": "accueil_cheminement_sens_marches",
       "title": "Sens de circulation de l'escalier",
-      "description": "Sens de circulation des marches ou de l'escalier. Valeurs possibles : montant -> Montant, descendant -> Descendant.",
+      "description": "Sens de circulation des marches ou de l'escalier. Valeurs possibles: montant -> Montant, descendant -> Descendant",
       "type": "string",
       "constraints": {
         "enum": [
@@ -2165,19 +1809,19 @@
           "descendant"
         ]
       },
-      "example": "descendant"
+      "example": "[\"montant\", \"descendant\"]"
     },
     {
       "name": "accueil_chambre_nombre_accessibles",
       "title": "Nombre de chambres accessibles à une personne en fauteuil roulant",
-      "description": "Nombre de chambres accessibles à une personne en fauteuil roulant.",
+      "description": "Nombre de chambres accessibles à une personne en fauteuil roulant",
       "type": "integer",
       "example": "0"
     },
     {
       "name": "accueil_chambre_douche_plain_pied",
       "title": "Douche accessible",
-      "description": "La douche est à l'italienne ou équipée d'un bac extra plat.",
+      "description": "La douche est à l'italienne ou équipée d'un bac extra plat",
       "type": "boolean",
       "trueValues": [
         "true",
@@ -2208,7 +1852,7 @@
     {
       "name": "accueil_chambre_douche_siege",
       "title": "Siège de douche",
-      "description": "La douche est équipée d'un siège de douche.",
+      "description": "La douche est équipée d'un siège de douche",
       "type": "boolean",
       "trueValues": [
         "true",
@@ -2239,7 +1883,7 @@
     {
       "name": "accueil_chambre_douche_barre_appui",
       "title": "Douche sécurisée",
-      "description": "La douche est équipée d'une barre d'appui horizontale.",
+      "description": "La douche est équipée d'une barre d'appui horizontale",
       "type": "boolean",
       "trueValues": [
         "true",
@@ -2270,7 +1914,7 @@
     {
       "name": "accueil_chambre_sanitaires_barre_appui",
       "title": "Toilette sécurisé",
-      "description": "Le toilette est équipé d'une barre d'appui horizontale.",
+      "description": "Le toilette est équipé d'une barre d'appui horizontale",
       "type": "boolean",
       "trueValues": [
         "true",
@@ -2301,7 +1945,7 @@
     {
       "name": "accueil_chambre_sanitaires_espace_usage",
       "title": "Toilette accessible",
-      "description": "Le toilette dispose d'un espace d'usage à côté de la cuvette.",
+      "description": "Le toilette dispose d'un espace d'usage à côté de la cuvette",
       "type": "boolean",
       "trueValues": [
         "true",
@@ -2332,7 +1976,7 @@
     {
       "name": "accueil_chambre_numero_visible",
       "title": "Visibilité des numéros de chambres",
-      "description": "Les numéros de chambres sont repérables et en relief.",
+      "description": "Les numéros de chambres sont repérables et en relief",
       "type": "boolean",
       "trueValues": [
         "true",
@@ -2363,7 +2007,7 @@
     {
       "name": "accueil_chambre_equipement_alerte",
       "title": "Equipement d'alerte adapté",
-      "description": "L'établissement dispose d'un ou plusieurs équipements d'alerte par flash lumineux ou vibration.",
+      "description": "L'établissement dispose d'un ou plusieurs équipements d'alerte par flash lumineux ou vibration",
       "type": "boolean",
       "trueValues": [
         "true",
@@ -2394,7 +2038,7 @@
     {
       "name": "accueil_chambre_accompagnement",
       "title": "Accompagnement spécifique",
-      "description": "Il est proposé un accompagnement personnalisé pour présenter la chambre à un client en situation de handicap, notamment aveugle ou malvoyant.",
+      "description": "Il est proposé un accompagnement personnalisé pour présenter la chambre à un client en situation de handicap, notamment aveugle ou malvoyant",
       "type": "boolean",
       "trueValues": [
         "true",
@@ -2518,7 +2162,7 @@
     {
       "name": "labels",
       "title": "Marques ou labels",
-      "description": "Marque(s) ou label(s) obtenus par l'établissement. Valeurs possibles : autre -> Autre, dpt -> Destination pour Tous, mobalib -> Mobalib, th -> Tourisme & Handicap.",
+      "description": "Marque(s) ou label(s) obtenus par l'établissement. Valeurs possibles: autre -> Autre, dpt -> Destination pour Tous, mobalib -> Mobalib, th -> Tourisme & Handicap, handiplage -> Handiplage",
       "type": "array",
       "arrayItem": {
         "type": "string",
@@ -2526,18 +2170,16 @@
           "autre",
           "dpt",
           "mobalib",
-          "th"
+          "th",
+          "handiplage"
         ]
       },
-      "example": [
-        "mobalib",
-        "th"
-      ]
+      "example": "[\"autre\", \"dpt\", \"mobalib\", \"th\", \"handiplage\"]"
     },
     {
       "name": "labels_familles_handicap",
       "title": "Famille(s) de handicap concernées(s)",
-      "description": "Famille(s) de handicap couverte(s) par ces marques ou labels. Valeurs possibles : auditif -> Handicap auditif, mental -> Handicap mental, moteur -> Handicap moteur, visuel -> Handicap visuel.",
+      "description": "Famille(s) de handicap couverte(s) par ces marques ou labels. Valeurs possibles: auditif -> Handicap auditif, mental -> Handicap mental, moteur -> Handicap moteur, visuel -> Handicap visuel",
       "type": "array",
       "arrayItem": {
         "type": "string",
@@ -2548,10 +2190,7 @@
           "visuel"
         ]
       },
-      "example": [
-        "moteur",
-        "visuel"
-      ]
+      "example": "[\"auditif\", \"mental\", \"moteur\", \"visuel\"]"
     },
     {
       "name": "registre_url",

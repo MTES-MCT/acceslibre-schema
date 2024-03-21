@@ -2,6 +2,11 @@
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
 
+### Version 0.0.15 - 03-21-2024
+* Rewrite descriptions and examples for array to be compliant with the schema specifications
+* Update activities
+* Add Handiplage as possible value for labels.
+
 ### Version 0.0.14 - 06-19-2023
 * Change project metadata
 
