@@ -2,6 +2,9 @@
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
 
+### Version 0.0.16 - 08-14-2024
+* Rename "Sanitaires" into "Toilettes"
+
 ### Version 0.0.15 - 03-21-2024
 * Rewrite descriptions and examples for array to be compliant with the schema specifications
 * Update activities
