@@ -1,6 +1,9 @@
 ## Changelog
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
+### Version 0.0.17 - 25-09-2025
+* Add new fields for school, floor accessibility.
+* Add new activities
 
 ### Version 0.0.16 - 08-14-2024
 * Rename "Sanitaires" into "Toilettes"
