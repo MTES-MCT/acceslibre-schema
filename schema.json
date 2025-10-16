@@ -792,6 +792,37 @@
       ]
     },
     {
+      "name": "cheminement_ext_ascenseur_pmr",
+      "type": "boolean",
+      "title": "Accessibilité de l’ascenseur",
+      "description": "Présence d'un ascenseur ou un élévateur PMR",
+      "example": "True",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ]
+    },
+    {
       "name": "cheminement_ext_nombre_marches",
       "type": "integer",
       "title": "Nombre de marches",
@@ -835,10 +866,7 @@
       "title": "Sens de circulation de l'escalier",
       "description": "Sens de circulation des marches ou de l'escalier. Valeurs possibles: montant -> Monter, descendant -> Descendre",
       "constraints": {
-        "enum": [
-          "montant",
-          "descendant"
-        ]
+        "enum": ["montant", "descendant"]
       },
       "example": "[\"montant\", \"descendant\"]"
     },
@@ -879,11 +907,7 @@
       "title": "Rampe",
       "description": "Présence d'une rampe fixe ou amovible. Valeurs possibles: aucune -> Aucune, fixe -> Fixe, amovible -> Amovible",
       "constraints": {
-        "enum": [
-          "aucune",
-          "fixe",
-          "amovible"
-        ]
+        "enum": ["aucune", "fixe", "amovible"]
       },
       "example": "[\"aucune\", \"fixe\", \"amovible\"]"
     },
@@ -924,10 +948,7 @@
       "title": "Degré de difficulté de la pente",
       "description": "Difficulté de la pente. Valeurs possibles: légère -> Légère, importante -> Importante",
       "constraints": {
-        "enum": [
-          "légère",
-          "importante"
-        ]
+        "enum": ["légère", "importante"]
       },
       "example": "[\"l\\u00e9g\\u00e8re\", \"importante\"]"
     },
@@ -937,11 +958,7 @@
       "title": "Longueur de la pente",
       "description": "Longueur de la pente. Valeurs possibles: courte -> inférieure à 0,5 mètres, moyenne -> entre 0,5 et 2 mètres, longue -> supérieure 2 mètres",
       "constraints": {
-        "enum": [
-          "courte",
-          "moyenne",
-          "longue"
-        ]
+        "enum": ["courte", "moyenne", "longue"]
       },
       "example": "[\"courte\", \"moyenne\", \"longue\"]"
     },
@@ -951,11 +968,7 @@
       "title": "Dévers",
       "description": "Dévers ou inclinaison transversale du chemin. Valeurs possibles: aucun -> Aucun, léger -> Léger, important -> Important",
       "constraints": {
-        "enum": [
-          "aucun",
-          "léger",
-          "important"
-        ]
+        "enum": ["aucun", "léger", "important"]
       },
       "example": "[\"aucun\", \"l\\u00e9ger\", \"important\"]"
     },
@@ -1177,6 +1190,37 @@
       ]
     },
     {
+      "name": "entree_ascenseur_pmr",
+      "type": "boolean",
+      "title": "Accessibilité de l’ascenseur",
+      "description": "Présence d'un ascenseur ou un élévateur PMR",
+      "example": "True",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ]
+    },
+    {
       "name": "entree_marches",
       "type": "integer",
       "title": "Nombre de marches",
@@ -1251,11 +1295,7 @@
       "title": "Rampe",
       "description": "Présence d'une rampe fixe ou amovible. Valeurs possibles: aucune -> Aucune, fixe -> Fixe, amovible -> Amovible",
       "constraints": {
-        "enum": [
-          "aucune",
-          "fixe",
-          "amovible"
-        ]
+        "enum": ["aucune", "fixe", "amovible"]
       },
       "example": "[\"aucune\", \"fixe\", \"amovible\"]"
     },
@@ -1265,10 +1305,7 @@
       "title": "Sens de circulation de l'escalier",
       "description": "Sens de circulation des marches ou de l'escalier. Valeurs possibles: montant -> Monter, descendant -> Descendre",
       "constraints": {
-        "enum": [
-          "montant",
-          "descendant"
-        ]
+        "enum": ["montant", "descendant"]
       },
       "example": "[\"montant\", \"descendant\"]"
     },
@@ -1311,11 +1348,7 @@
       "example": "[\"bouton\", \"interphone\", \"visiophone\"]",
       "arrayItem": {
         "type": "string",
-        "enum": [
-          "bouton",
-          "interphone",
-          "visiophone"
-        ]
+        "enum": ["bouton", "interphone", "visiophone"]
       }
     },
     {
@@ -1455,12 +1488,7 @@
       "title": "Manoeuvre de la porte",
       "description": "Mode d'ouverture de la porte. Valeurs possibles: battante -> Porte battante, coulissante -> Porte coulissante, tourniquet -> Tourniquet, tambour -> Porte tambour",
       "constraints": {
-        "enum": [
-          "battante",
-          "coulissante",
-          "tourniquet",
-          "tambour"
-        ]
+        "enum": ["battante", "coulissante", "tourniquet", "tambour"]
       },
       "example": "[\"battante\", \"coulissante\", \"tourniquet\", \"tambour\"]"
     },
@@ -1470,10 +1498,7 @@
       "title": "Type de porte",
       "description": "Type de porte. Valeurs possibles: manuelle -> Manuelle, automatique -> Automatique",
       "constraints": {
-        "enum": [
-          "manuelle",
-          "automatique"
-        ]
+        "enum": ["manuelle", "automatique"]
       },
       "example": "[\"manuelle\", \"automatique\"]"
     },
@@ -1514,11 +1539,7 @@
       "title": "Personnel d'accueil",
       "description": "Personnel à l'accueil des personnes handicapées. Valeurs possibles: aucun -> Aucun personnel, formés -> Personnels sensibilisés ou formés, non-formés -> Personnels non-formés",
       "constraints": {
-        "enum": [
-          "aucun",
-          "formés",
-          "non-formés"
-        ]
+        "enum": ["aucun", "formés", "non-formés"]
       },
       "example": "[\"aucun\", \"form\\u00e9s\", \"non-form\\u00e9s\"]"
     },
@@ -1608,14 +1629,7 @@
       "example": "[\"bim\", \"bmp\", \"lsf\", \"lpc\", \"sts\", \"autres\"]",
       "arrayItem": {
         "type": "string",
-        "enum": [
-          "bim",
-          "bmp",
-          "lsf",
-          "lpc",
-          "sts",
-          "autres"
-        ]
+        "enum": ["bim", "bmp", "lsf", "lpc", "sts", "autres"]
       }
     },
     {
@@ -1654,6 +1668,37 @@
       "type": "boolean",
       "title": "Ascenseur/élévateur",
       "description": "Présence d'un ascenseur ou un élévateur",
+      "example": "True",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ]
+    },
+    {
+      "name": "accueil_cheminement_ascenseur_pmr",
+      "type": "boolean",
+      "title": "Accessibilité de l’ascenseur",
+      "description": "Présence d'un ascenseur ou un élévateur PMR",
       "example": "True",
       "trueValues": [
         "true",
@@ -1755,11 +1800,7 @@
       "title": "Rampe",
       "description": "Présence d'une rampe fixe ou amovible. Valeurs possibles: aucune -> Aucune, fixe -> Fixe, amovible -> Amovible",
       "constraints": {
-        "enum": [
-          "aucune",
-          "fixe",
-          "amovible"
-        ]
+        "enum": ["aucune", "fixe", "amovible"]
       },
       "example": "[\"aucune\", \"fixe\", \"amovible\"]"
     },
@@ -1769,10 +1810,7 @@
       "title": "Sens de circulation de l'escalier",
       "description": "Sens de circulation des marches ou de l'escalier. Valeurs possibles: montant -> Monter, descendant -> Descendre",
       "constraints": {
-        "enum": [
-          "montant",
-          "descendant"
-        ]
+        "enum": ["montant", "descendant"]
       },
       "example": "[\"montant\", \"descendant\"]"
     },
@@ -1780,7 +1818,7 @@
       "name": "accueil_ascenseur_etage",
       "type": "boolean",
       "title": "Ascenseur desservant le ou les étages",
-      "description": "Ascenseur desservant le ou les étages",
+      "description": "Les étages sont desservis par un ascenseur",
       "example": "True",
       "trueValues": [
         "true",
@@ -1811,7 +1849,7 @@
       "name": "accueil_ascenseur_etage_pmr",
       "type": "boolean",
       "title": "Accessibilité de l’ascenseur",
-      "description": "L’ascenseur est accessible",
+      "description": "Les étages sont desservis par un ascenseur PMR",
       "example": "True",
       "trueValues": [
         "true",
@@ -1844,11 +1882,7 @@
       "title": "Accessibilité des salles de classes",
       "description": "Accessibilité des salles de classes. Valeurs possibles: aucune -> Aucune salle de classe, partielle -> Au moins une salle de classe (accessibilité partielle des salles), toutes -> Toutes les salles de classe (accessibilité totale des salles)",
       "constraints": {
-        "enum": [
-          "aucune",
-          "partielle",
-          "toutes"
-        ]
+        "enum": ["aucune", "partielle", "toutes"]
       },
       "example": "[\"aucune\", \"partielle\", \"toutes\"]"
     },
@@ -1856,16 +1890,11 @@
       "name": "accueil_espaces_ouverts",
       "type": "array",
       "title": "Accessibilité des différents espaces ouverts aux élèves ou étudiants",
-      "description": "Accessibilité des différents espaces ouverts aux élèves ou étudiants. Valeurs possibles: restauration -> A la cantine ou l’espace restauration, bibliotheque -> A la bibliothèque ou CDI, cour -> Dans la cour, sante -> Dans les locaux de santé (infirmerie, bureau du médecin scolaire, bureau du psychologue, etc)",
+      "description": "Une personne en fauteuil roulant peut se rendre :. Valeurs possibles: restauration -> A la cantine ou l’espace restauration, bibliotheque -> A la bibliothèque ou CDI, cour -> Dans la cour, sante -> Dans les locaux de santé (infirmerie, bureau du médecin scolaire, bureau du psychologue, etc)",
       "example": "[\"restauration\", \"bibliotheque\", \"cour\", \"sante\"]",
       "arrayItem": {
         "type": "string",
-        "enum": [
-          "restauration",
-          "bibliotheque",
-          "cour",
-          "sante"
-        ]
+        "enum": ["restauration", "bibliotheque", "cour", "sante"]
       }
     },
     {
@@ -2224,13 +2253,7 @@
       "example": "[\"autre\", \"dpt\", \"mobalib\", \"th\", \"handiplage\"]",
       "arrayItem": {
         "type": "string",
-        "enum": [
-          "autre",
-          "dpt",
-          "mobalib",
-          "th",
-          "handiplage"
-        ]
+        "enum": ["autre", "dpt", "mobalib", "th", "handiplage"]
       }
     },
     {
@@ -2241,12 +2264,7 @@
       "example": "[\"auditif\", \"mental\", \"moteur\", \"visuel\"]",
       "arrayItem": {
         "type": "string",
-        "enum": [
-          "auditif",
-          "mental",
-          "moteur",
-          "visuel"
-        ]
+        "enum": ["auditif", "mental", "moteur", "visuel"]
       }
     },
     {
@@ -2289,18 +2307,12 @@
       ]
     }
   ],
-  "primaryKey": [
-    "id"
-  ],
+  "primaryKey": ["id"],
   "$schema": "https://specs.frictionlessdata.io/schemas/table-schema.json",
-  "keywords": [
-    "accessibilite",
-    "access",
-    "a11y"
-  ],
+  "keywords": ["accessibilite", "access", "a11y"],
   "countryCode": "FR",
   "homepage": "https://github.com/MTES-MCT/acceslibre-schema",
-  "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.17/schema.json",
+  "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.18/schema.json",
   "licenses": [
     {
       "title": "Etalab Licence Ouverte 2.0",
@@ -2312,18 +2324,18 @@
     {
       "title": "Fichier valide (CSV)",
       "name": "exemple-valide-csv",
-      "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.17/exemple-valide.csv"
+      "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.18/exemple-valide.csv"
     },
     {
       "title": "Schéma au format XLS",
       "name": "schema_format_xls",
-      "path": "https://github.com/MTES-MCT/acceslibre-schema/blob/v0.0.10/schema_format_excel.xls"
+      "path": "https://github.com/MTES-MCT/acceslibre-schema/blob/v0.0.18/schema_format_excel.xls"
     }
   ],
   "sources": [],
   "created": "2021-03-10",
   "lastModified": "2025-09-25",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "contributors": [
     {
       "title": "Christophe Vanfrackem",
