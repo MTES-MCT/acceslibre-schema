@@ -1,6 +1,9 @@
 ## Changelog
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
+### Version 0.0.19 - 23-12-2025
+* Add new fields for polling station accessibility.
+
 ### Version 0.0.18 - 25-09-2025
 * Add new fields for elevators accessibility.
 
