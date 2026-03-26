@@ -1,0 +1,57 @@
+{
+  "name": "acceslibre",
+  "title": "Schémas des données d'accessibilité des ERPs",
+  "description": "Spécification du fichier d'échange relatif aux données d'accessibilité des Établissements Recevant du Public (ERP).",
+  "resources": [
+    {
+      "name": "acceslibre-erp-base",
+      "description": "Établissements Recevant du Public (ERP)",
+      "path": "base/base-valid-sample.csv",
+      "profile": "tabular-data-resource",
+      "schema": "base/schema_base.json",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "acceslibre-erp-floor",
+      "description": "Établissements Recevant du Public (ERP) appartenant à la macro activité en rapport avec les étages",
+      "path": "floor/floor-valid-sample.csv",
+      "profile": "tabular-data-resource",
+      "schema": "floor/schema_floor.json",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "acceslibre-erp-hosting",
+      "description": "Établissements Recevant du Public (ERP) appartenant à la macro activité en rapport avec l'hébérgement",
+      "path": "hosting/hosting-valid-sample.csv",
+      "profile": "tabular-data-resource",
+      "schema": "hosting/schema_hosting.json",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "acceslibre-erp-polling-station",
+      "description": "Établissements Recevant du Public (ERP) appartenant à la macro activité en rapport avec les bureaux de vote",
+      "path": "data/polling_station-valid-sample.csv",
+      "profile": "tabular-data-resource",
+      "schema": "polling_station/schema_polling_station.json",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    },
+    {
+      "name": "acceslibre-erp-school",
+      "description": "Établissements Recevant du Public (ERP) appartenant à la macro activité en rapport avec les établissements scolaires",
+      "path": "school/school-valid-sample.csv",
+      "profile": "tabular-data-resource",
+      "schema": "school/schema_school.json",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
+    }
+  ]
+}
