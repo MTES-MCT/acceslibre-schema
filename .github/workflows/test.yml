@@ -1,19 +1,15 @@
 name: Vérification du respect des spécifications
-
 on:
   push:
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - name: Installation Python 3.10
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-
       - name: Cache pip
         uses: actions/cache@v3
         with:
@@ -22,11 +18,28 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pip-
             ${{ runner.os }}-
-
       - name: Installation des dépendances
         run: pip install -r requirements.txt
-
-      - name: Vérification du schéma et des fichiers d'exemples
+      - name: Vérification du schéma base et du fichier d'exemple associé
         run: |
-          frictionless validate --type schema schema.json
-          frictionless validate --schema schema.json exemple-valide.csv
+          frictionless validate --type schema base/schema_base.json
+          frictionless validate --schema base/schema_base.json base/base-valid-sample.csv
+      - name: Vérification du schéma floor et du fichier d'exemple associé
+        run: |
+          frictionless validate --type schema floor/schema_floor.json
+          frictionless validate --schema floor/schema_floor.json floor/floor-valid-sample.csv
+      - name: Vérification du schéma hosting et du fichier d'exemple associé
+        run: |
+          frictionless validate --type schema hosting/schema_hosting.json
+          frictionless validate --schema hosting/schema_hosting.json hosting/hosting-valid-sample.csv
+      - name: Vérification du schéma polling_station et du fichier d'exemple associé
+        run: |
+          frictionless validate --type schema polling_station/schema_polling_station.json
+          frictionless validate --schema polling_station/schema_polling_station.json polling_station/polling_station-valid-sample.csv
+      - name: Vérification du schéma school et du fichier d'exemple associé
+        run: |
+          frictionless validate --type schema school/schema_school.json
+          frictionless validate --schema school/schema_school.json school/school-valid-sample.csv
+      - name: Vérification du datapackage
+        run: |
+          frictionless validate datapackage.json
