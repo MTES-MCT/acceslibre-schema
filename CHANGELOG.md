@@ -1,7 +1,7 @@
 ## Changelog
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
-### Version 0.0.21 - 20-04-2026
+### Version 0.0.20 - 29-04-2026
 * Updated base schema to contain all the fields related to all the other macro activities (in floo,r hosting, polling_station, school)
 * Updated csv sample for base schema
 * Updated json files with correct versions

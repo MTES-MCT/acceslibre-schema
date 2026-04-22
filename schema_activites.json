@@ -1,0 +1,50 @@
+{
+  "name": "acceslibre-activites",
+  "title": "Liste des activités et schéma de données associé",
+  "description": "Correspondance entre chaque activité d'ERP gérée par acceslibre et le schéma de données d'accessibilité applicable.",
+  "fields": [
+    {
+      "name": "Activité",
+      "type": "string",
+      "description": "Nom de l'activité de l'ERP.",
+      "constraints": {
+        "required": true
+      },
+      "example": "Boulangerie Pâtisserie"
+    },
+    {
+      "name": "Nom du schéma de données",
+      "type": "string",
+      "description": "Nom du schéma de données d'accessibilité applicable à cette activité.",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "Base",
+          "Grands etablissements",
+          "Hébergement",
+          "Bureau de vote",
+          "Etablissements scolaires"
+        ]
+      },
+      "example": "Base"
+    }
+  ],
+
+  "created": "2026-04-29",
+  "lastModified": "2026-04-29",
+  "version": "0.0.20",
+  "contributors": [
+    {
+      "title": "Marie-Laure Vernay",
+      "email": "marielaure.vernay@beta.gouv.fr",
+      "organisation": "MTES-MCT",
+      "role": "author"
+    },
+    {
+      "title": "Patrick Nguyen",
+      "email": "patrick.nguyen@beta.gouv.fr",
+      "organisation": "MTES-MCT",
+      "role": "author"
+    }
+  ]
+}

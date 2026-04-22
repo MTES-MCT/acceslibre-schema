@@ -22,26 +22,6 @@ jobs:
             ${{ runner.os }}-
       - name: Installation des dépendances
         run: pip install -r requirements.txt
-      - name: Vérification du schéma base et du fichier d'exemple associé
-        run: |
-          frictionless validate --type schema base/schema_base.json
-          frictionless validate --schema base/schema_base.json base/base-valid-sample.csv
-      - name: Vérification du schéma floor et du fichier d'exemple associé
-        run: |
-          frictionless validate --type schema floor/schema_floor.json
-          frictionless validate --schema floor/schema_floor.json floor/floor-valid-sample.csv
-      - name: Vérification du schéma hosting et du fichier d'exemple associé
-        run: |
-          frictionless validate --type schema hosting/schema_hosting.json
-          frictionless validate --schema hosting/schema_hosting.json hosting/hosting-valid-sample.csv
-      - name: Vérification du schéma polling_station et du fichier d'exemple associé
-        run: |
-          frictionless validate --type schema polling_station/schema_polling_station.json
-          frictionless validate --schema polling_station/schema_polling_station.json polling_station/polling_station-valid-sample.csv
-      - name: Vérification du schéma school et du fichier d'exemple associé
-        run: |
-          frictionless validate --type schema school/schema_school.json
-          frictionless validate --schema school/schema_school.json school/school-valid-sample.csv
       - name: Vérification du datapackage
         run: |
           frictionless validate datapackage.json
