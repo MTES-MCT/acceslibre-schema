@@ -1199,53 +1199,6 @@
       "example": "[\"aucun\", \"form\\u00e9s\", \"non-form\\u00e9s\"]"
     },
     {
-      "name": "accueil_audiodescription_presence",
-      "type": "boolean",
-      "title": "Audiodescription",
-      "description": "L'établissement propose l'audiodescription",
-      "example": "True",
-      "trueValues": [
-        "true",
-        "True",
-        "TRUE",
-        "1",
-        "vrai",
-        "Vrai",
-        "VRAI",
-        "oui",
-        "Oui",
-        "OUI"
-      ],
-      "falseValues": [
-        "false",
-        "False",
-        "FALSE",
-        "0",
-        "faux",
-        "Faux",
-        "FAUX",
-        "non",
-        "Non",
-        "NON"
-      ]
-    },
-    {
-      "name": "accueil_audiodescription",
-      "type": "array",
-      "title": "Type d'équipements pour l'audiodescription",
-      "description": "Équipements disponibles. Valeurs possibles: avec_équipement_permanent -> avec équipement permanent, casques et boîtiers disponibles à l’accueil, avec_app -> avec équipement permanent nécessitant le téléchargement d'une application sur smartphone, avec_équipement_occasionnel -> avec équipement occasionnel selon la programmation, sans_équipement -> sans équipement, audiodescription audible par toute la salle (selon la programmation)",
-      "example": "[\"avec_\\u00e9quipement_permanent\", \"avec_app\", \"avec_\\u00e9quipement_occasionnel\", \"sans_\\u00e9quipement\"]",
-      "arrayItem": {
-        "type": "string",
-        "enum": [
-          "avec_équipement_permanent",
-          "avec_app",
-          "avec_équipement_occasionnel",
-          "sans_équipement"
-        ]
-      }
-    },
-    {
       "name": "accueil_equipements_malentendants_presence",
       "type": "boolean",
       "title": "Présence d’équipements d’aide à l’audition et à la compréhension",
@@ -1512,6 +1465,68 @@
           "sante"
         ]
       }
+    },
+    {
+      "name": "accueil_ascenseur_etage",
+      "type": "boolean",
+      "title": "Ascenseur desservant le ou les étages",
+      "description": "Les étages sont desservis par un ascenseur",
+      "example": "True",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ]
+    },
+    {
+      "name": "accueil_ascenseur_etage_pmr",
+      "type": "boolean",
+      "title": "Accessibilité de l’ascenseur",
+      "description": "Les étages sont desservis par un ascenseur PMR",
+      "example": "True",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ]
     },
     {
       "name": "accueil_retrecissement",
