@@ -705,6 +705,37 @@
       ]
     },
     {
+      "name": "cheminement_ext_signaletique_exterieure",
+      "type": "boolean",
+      "title": "Signalétique extérieure",
+      "description": "Présence d'une signalétique extérieure facilitant le repérage et l'orientation",
+      "example": "True",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ]
+    },
+    {
       "name": "entree_reperage",
       "type": "boolean",
       "title": "L’entrée de l’établissement",
@@ -1588,6 +1619,37 @@
       "type": "boolean",
       "title": "Rétrécissement du chemin",
       "description": "Présence d'un ou plusieurs rétrécissements inférieurs à 90 centimètres du chemin pour atteindre la zone d'accueil",
+      "example": "True",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ]
+    },
+    {
+      "name": "accueil_signaletique_interieure",
+      "type": "boolean",
+      "title": "Signalétique intérieure",
+      "description": "Présence d'une signalétique intérieure facilitant le repérage et l'orientation",
       "example": "True",
       "trueValues": [
         "true",
