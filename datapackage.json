@@ -52,16 +52,6 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8"
-    },
-    {
-      "name": "acceslibre-erp-activites",
-      "description": "Liste des activités d'ERP gérées par acceslibre et schéma de données d'accessibilité associé.",
-      "path": "schema_activites.csv",
-      "profile": "tabular-data-resource",
-      "schema": "schema_activites.json",
-      "format": "csv",
-      "mediatype": "text/csv",
-      "encoding": "utf-8"
     }
   ]
 }

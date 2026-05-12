@@ -1209,37 +1209,6 @@
       ]
     },
     {
-      "name": "accueil_cheminement_reperage_marches",
-      "type": "boolean",
-      "title": "Repérage des marches ou de l'escalier",
-      "description": "Nez de marche contrastés, bande d'éveil à la vigilance en haut de l'escalier et/ou première et dernière contremarches contrastées",
-      "example": "True",
-      "trueValues": [
-        "true",
-        "True",
-        "TRUE",
-        "1",
-        "vrai",
-        "Vrai",
-        "VRAI",
-        "oui",
-        "Oui",
-        "OUI"
-      ],
-      "falseValues": [
-        "false",
-        "False",
-        "FALSE",
-        "0",
-        "faux",
-        "Faux",
-        "FAUX",
-        "non",
-        "Non",
-        "NON"
-      ]
-    },
-    {
       "name": "accueil_isoloir_accessibilite",
       "type": "boolean",
       "title": "Isoloir",
