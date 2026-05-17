@@ -115,51 +115,13 @@
       "arrayItem": {
         "type": "string",
         "enum": [
-          "Administration publique",
-          "Aquarium",
-          "Arène",
-          "Art, centre d'art",
-          "Auberge de jeunesse, centre international de séjour",
-          "Bibliothèque médiathèque",
-          "Café, bar, brasserie",
-          "Centre commercial",
-          "Centre médical",
-          "Château",
-          "Cinéma",
-          "Clinique",
           "Collège",
-          "Conservatoire et école de musique",
-          "Crèche",
-          "Ecole de danse",
           "École élémentaire",
           "École maternelle",
           "École primaire (regroupement maternelle et élémentaire)",
-          "Ehpad",
-          "Enseignement culturel",
-          "Établissement de santé",
-          "Gare sncf",
-          "Gare tgv",
           "Groupe scolaire",
-          "Guichet france services",
-          "Gymnase",
-          "Hôpital",
-          "Hôtel",
-          "Hôtel restaurant",
           "Institut de formation, de recherche",
-          "Lieu de visite",
           "Lycée",
-          "Mairie",
-          "Maison de santé ou centre de santé",
-          "Monument historique",
-          "Musée",
-          "Opéra",
-          "Parking & stationnement",
-          "Personnes âgées : foyer restaurant",
-          "Personnes âgées : hébergement",
-          "Salle de concert",
-          "Salle de spectacle",
-          "Théâtre",
-          "Tribunal",
           "Université ou école supérieure"
         ]
       }
@@ -678,37 +640,6 @@
       "type": "boolean",
       "title": "Rétrécissement du chemin",
       "description": "Un ou plusieurs rétrécissements inférieurs à 90 centimètres du chemin pour atteindre la zone d'accueil",
-      "example": "True",
-      "trueValues": [
-        "true",
-        "True",
-        "TRUE",
-        "1",
-        "vrai",
-        "Vrai",
-        "VRAI",
-        "oui",
-        "Oui",
-        "OUI"
-      ],
-      "falseValues": [
-        "false",
-        "False",
-        "FALSE",
-        "0",
-        "faux",
-        "Faux",
-        "FAUX",
-        "non",
-        "Non",
-        "NON"
-      ]
-    },
-    {
-      "name": "cheminement_ext_signaletique_exterieure",
-      "type": "boolean",
-      "title": "Signalétique extérieure",
-      "description": "Présence d’une signalétique extérieure, lisible et compréhensible par tous",
       "example": "True",
       "trueValues": [
         "true",
@@ -1268,102 +1199,6 @@
       "example": "[\"aucun\", \"form\\u00e9s\", \"non-form\\u00e9s\"]"
     },
     {
-      "name": "accueil_audiodescription_presence",
-      "type": "boolean",
-      "title": "Audiodescription",
-      "description": "L'établissement propose l'audiodescription",
-      "example": "True",
-      "trueValues": [
-        "true",
-        "True",
-        "TRUE",
-        "1",
-        "vrai",
-        "Vrai",
-        "VRAI",
-        "oui",
-        "Oui",
-        "OUI"
-      ],
-      "falseValues": [
-        "false",
-        "False",
-        "FALSE",
-        "0",
-        "faux",
-        "Faux",
-        "FAUX",
-        "non",
-        "Non",
-        "NON"
-      ]
-    },
-    {
-      "name": "accueil_audiodescription",
-      "type": "array",
-      "title": "Type d'équipements pour l'audiodescription",
-      "description": "Équipements disponibles. Valeurs possibles: avec_équipement_permanent -> avec équipement permanent, casques et boîtiers disponibles à l’accueil, avec_app -> avec équipement permanent nécessitant le téléchargement d'une application sur smartphone, avec_équipement_occasionnel -> avec équipement occasionnel selon la programmation, sans_équipement -> sans équipement, audiodescription audible par toute la salle (selon la programmation)",
-      "example": "[\"avec_\\u00e9quipement_permanent\", \"avec_app\", \"avec_\\u00e9quipement_occasionnel\", \"sans_\\u00e9quipement\"]",
-      "arrayItem": {
-        "type": "string",
-        "enum": [
-          "avec_équipement_permanent",
-          "avec_app",
-          "avec_équipement_occasionnel",
-          "sans_équipement"
-        ]
-      }
-    },
-    {
-      "name": "accueil_equipements_malentendants_presence",
-      "type": "boolean",
-      "title": "Présence d’équipements d’aide à l’audition et à la compréhension",
-      "description": "Présence de produits ou prestations dédiés aux personnes sourdes ou malentendantes",
-      "example": "True",
-      "trueValues": [
-        "true",
-        "True",
-        "TRUE",
-        "1",
-        "vrai",
-        "Vrai",
-        "VRAI",
-        "oui",
-        "Oui",
-        "OUI"
-      ],
-      "falseValues": [
-        "false",
-        "False",
-        "FALSE",
-        "0",
-        "faux",
-        "Faux",
-        "FAUX",
-        "non",
-        "Non",
-        "NON"
-      ]
-    },
-    {
-      "name": "accueil_equipements_malentendants",
-      "type": "array",
-      "title": "Liste des équipements d'aide à l'audition et à la communication",
-      "description": "Équipements ou prestations disponibles. Valeurs possibles: bim -> boucle à induction magnétique fixe, bmp -> boucle à induction magnétique portative, lsf -> langue des signes française (LSF), lpc -> langue française parlée complétée (LFPC), sts -> sous-titrage ou transcription simultanée, autres -> autres",
-      "example": "[\"bim\", \"bmp\", \"lsf\", \"lpc\", \"sts\", \"autres\"]",
-      "arrayItem": {
-        "type": "string",
-        "enum": [
-          "bim",
-          "bmp",
-          "lsf",
-          "lpc",
-          "sts",
-          "autres"
-        ]
-      }
-    },
-    {
       "name": "accueil_cheminement_plain_pied",
       "type": "boolean",
       "title": "Chemin entre l'entrée principale du bâtiment et l'accueil de l'établissement",
@@ -1553,68 +1388,6 @@
       "example": "[\"montant\", \"descendant\"]"
     },
     {
-      "name": "accueil_ascenseur_etage",
-      "type": "boolean",
-      "title": "Ascenseur desservant le ou les étages",
-      "description": "Les étages sont desservis par un ascenseur",
-      "example": "True",
-      "trueValues": [
-        "true",
-        "True",
-        "TRUE",
-        "1",
-        "vrai",
-        "Vrai",
-        "VRAI",
-        "oui",
-        "Oui",
-        "OUI"
-      ],
-      "falseValues": [
-        "false",
-        "False",
-        "FALSE",
-        "0",
-        "faux",
-        "Faux",
-        "FAUX",
-        "non",
-        "Non",
-        "NON"
-      ]
-    },
-    {
-      "name": "accueil_ascenseur_etage_pmr",
-      "type": "boolean",
-      "title": "Accessibilité de l’ascenseur",
-      "description": "Les étages sont desservis par un ascenseur PMR",
-      "example": "True",
-      "trueValues": [
-        "true",
-        "True",
-        "TRUE",
-        "1",
-        "vrai",
-        "Vrai",
-        "VRAI",
-        "oui",
-        "Oui",
-        "OUI"
-      ],
-      "falseValues": [
-        "false",
-        "False",
-        "FALSE",
-        "0",
-        "faux",
-        "Faux",
-        "FAUX",
-        "non",
-        "Non",
-        "NON"
-      ]
-    },
-    {
       "name": "accueil_retrecissement",
       "type": "boolean",
       "title": "Rétrécissement du chemin",
@@ -1646,10 +1419,10 @@
       ]
     },
     {
-      "name": "accueil_signaletique_interieure",
+      "name": "accueil_soignant",
       "type": "boolean",
-      "title": "Signalétique intérieure",
-      "description": "Présence d’une signalétique, lisible et compréhensible par tous à l’intérieur de l'établissement",
+      "title": "Soignant sensibilisé ou formé",
+      "description": "Le soignant est-il formé ou possède-t-il une expérience particulière pour la prise en charge de personnes en situation de handicap",
       "example": "True",
       "trueValues": [
         "true",
@@ -1675,6 +1448,100 @@
         "Non",
         "NON"
       ]
+    },
+    {
+      "name": "accueil_soignant_experience",
+      "type": "array",
+      "title": "Expérience du soignant concernant les types de handicap",
+      "description": "Pour quels types de handicap le soignant possède-t-il une expérience particulière. Valeurs possibles: visuel, auditif, moteur, mental, psychique, cognitif",
+      "example": "[\"visuel\", \"auditif\", \"moteur\", \"mental\", \"psychique\", \"cognitif\"]",
+      "arrayItem": {
+        "type": "string",
+        "enum": [
+          "visuel",
+          "auditif",
+          "moteur",
+          "mental_psychique"
+        ]
+      }
+    },
+    {
+      "name": "accueil_salle_consultation_accessible",
+      "type": "boolean",
+      "title": "Accessibilité de la salle de consultation",
+      "description": "La salle de consultation est-elle accessible en fauteuil roulant ?",
+      "example": "True",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ]
+    },
+    {
+      "name": "accueil_consultation_domicile",
+      "type": "boolean",
+      "title": "Consultation à domicile",
+      "description": "Des consultations à domicile sont-elles possibles pour les personnes en situation de handicap ?",
+      "example": "True",
+      "trueValues": [
+        "true",
+        "True",
+        "TRUE",
+        "1",
+        "vrai",
+        "Vrai",
+        "VRAI",
+        "oui",
+        "Oui",
+        "OUI"
+      ],
+      "falseValues": [
+        "false",
+        "False",
+        "FALSE",
+        "0",
+        "faux",
+        "Faux",
+        "FAUX",
+        "non",
+        "Non",
+        "NON"
+      ]
+    },
+    {
+      "name": "accueil_prise_en_charge_patients",
+      "type": "array",
+      "title": "Prise en charge des patients",
+      "description": "L'établissement offre-t-il des prestations complémentaires pour la prise en charge des patients en situation de handicap ? Valeurs possibles: preparation -> Préparation à la consultation ou visite préalable pour les personnes ayant un handicap mental ou psychique, organisation -> Organisation spécifique pour réduire le temps d’attente pour les personnes ayant un handicap mental ou psychique, outils_communication -> Outils de communication simplifiés pour expliquer les actes, materiel_auscultation -> Matériel d’auscultation adaptés aux personnes obèses",
+      "example": "[\"preparation\", \"organisation\", \"outils_communication\", \"materiel_auscultation\"]",
+      "arrayItem": {
+        "type": "string",
+        "enum": [
+          "preparation",
+          "organisation",
+          "outils_communication",
+          "materiel_auscultation"
+        ]
+      }
     },
     {
       "name": "sanitaires_presence",
@@ -1739,39 +1606,6 @@
       ]
     },
     {
-      "name": "labels",
-      "type": "array",
-      "title": "Marques ou labels",
-      "description": "Marque(s) ou label(s) obtenus par l'établissement. Valeurs possibles: autre -> Autre, dpt -> Destination pour Tous, mobalib -> Mobalib, th -> Tourisme & Handicap, handiplage -> Handiplage",
-      "example": "[\"autre\", \"dpt\", \"mobalib\", \"th\", \"handiplage\"]",
-      "arrayItem": {
-        "type": "string",
-        "enum": [
-          "autre",
-          "dpt",
-          "mobalib",
-          "th",
-          "handiplage"
-        ]
-      }
-    },
-    {
-      "name": "labels_familles_handicap",
-      "type": "array",
-      "title": "Famille(s) de handicap concernées(s)",
-      "description": "Famille(s) de handicap couverte(s) par ces marques ou labels. Valeurs possibles: auditif -> Handicap auditif, mental -> Handicap mental, moteur -> Handicap moteur, visuel -> Handicap visuel",
-      "example": "[\"auditif\", \"mental\", \"moteur\", \"visuel\"]",
-      "arrayItem": {
-        "type": "string",
-        "enum": [
-          "auditif",
-          "mental",
-          "moteur",
-          "visuel"
-        ]
-      }
-    },
-    {
       "name": "registre_url",
       "type": "string",
       "title": "Registre",
@@ -1822,7 +1656,7 @@
   ],
   "countryCode": "FR",
   "homepage": "https://github.com/MTES-MCT/acceslibre-schema",
-  "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.20/grands_etablissements/schema.json",
+  "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.20/etablissements_scolaires/schema.json",
   "licenses": [
     {
       "title": "Etalab Licence Ouverte 2.0",
@@ -1834,12 +1668,12 @@
     {
       "title": "Fichier valide (CSV)",
       "name": "exemple-valide-csv",
-      "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.20/grands_etablissements/exemple.csv"
+      "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.20/etablissements_scolaires/exemple.csv"
     },
     {
       "title": "Schéma au format XLS",
       "name": "schema_format_xls",
-      "path": "https://github.com/MTES-MCT/acceslibre-schema/blob/v0.0.20/grands_etablissements/schema.xls"
+      "path": "https://github.com/MTES-MCT/acceslibre-schema/blob/v0.0.20/etablissements_scolaires/schema.xls"
     }
   ],
   "sources": [],

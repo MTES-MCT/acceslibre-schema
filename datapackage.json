@@ -52,6 +52,16 @@
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8"
+    },
+        {
+      "name": "acceslibre-erp-sante",
+      "description": "Établissements Recevant du Public (ERP) appartenant à la macro activité en rapport avec les lieux de santé",
+      "path": "sante/exemple.csv",
+      "profile": "tabular-data-resource",
+      "schema": "sante/schema.json",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8"
     }
   ]
 }
