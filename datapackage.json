@@ -6,9 +6,9 @@
     {
       "name": "acceslibre-erp-base",
       "description": "Établissements Recevant du Public (ERP)",
-      "path": "exemple-valide.csv",
+      "path": "base/exemple.csv",
       "profile": "tabular-data-resource",
-      "schema": "schema.json",
+      "schema": "base/schema.json",
       "format": "csv",
       "mediatype": "text/csv",
       "encoding": "utf-8"
