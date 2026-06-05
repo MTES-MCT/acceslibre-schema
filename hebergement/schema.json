@@ -1,6 +1,6 @@
 {
-  "name": "acceslibre",
-  "title": "Schéma des données d'accessibilité des ERPs",
+  "name": "acceslibre-erp-hebergement",
+  "title": "Accessibilité ERP — Hébergement",
   "description": "Spécification du fichier d'échange relatif aux données d'accessibilité des Établissements Recevant du Public (ERP).",
   "fields": [
     {

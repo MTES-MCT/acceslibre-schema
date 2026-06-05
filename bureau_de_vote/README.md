@@ -92,7 +92,7 @@ Voici les étapes à suivre en fonction du format choisi :
 
 1) Format json :
    1) Publier le jeu de données sur data.gouv.fr
-   2) Prévenir l’équipe acceslibre du dépôt en écrivant un mail à [acceslibre@beta.gouv.fr](mailto:acceslibre@beta.gouv.fr)
+   2) Prévenir l’équipe acceslibre du dépôt en écrivant un mail à [contact@acceslibre.beta.gouv.fr](mailto:contact@acceslibre.beta.gouv.fr)
 
 2) Format csv, via le modèle fourni “schema”
    1) Télécharger et remplissez le document excel [schéma format excel](https://github.com/MTES-MCT/acceslibre-schema/blob/master/bureau_de_vote/schema.xls)
@@ -103,7 +103,7 @@ Voici les étapes à suivre en fonction du format choisi :
 Votre fichier est prêt à être déposé.
 3) Déposer le fichier sur : [https://publier.etalab.studio/select?schema=MTES-MCT%2Facceslibre-schema](https://publier.etalab.studio/select?schema=MTES-MCT%2Facceslibre-schema)
 (création de compte obligatoire)
-4) Prévenir l’équipe acceslibre du dépôt du fichier en écrivant un mail à : [acceslibre@beta.gouv.fr](mailto:acceslibre@beta.gouv.fr)
+4) Prévenir l’équipe acceslibre du dépôt du fichier en écrivant un mail à : [contact@acceslibre.beta.gouv.fr](mailto:contact@acceslibre.beta.gouv.fr)
 
 
 ### Format de fichier <a name="format"></a>
@@ -124,5 +124,5 @@ Les mises à jour sont effectuées à partir du fichier communiqué précédemme
 ### Nous contacter <a name="contact"></a>
 
 Pour contacter l’équipe Acceslibre en charge de l’élaboration et de l’utilisation de ce schéma, n’hésitez pas à nous
-écrire à l’adresse suivante : [acceslibre@beta.gouv.fr](mailto:acceslibre@beta.gouv.fr). Toutes les contributions sont
+écrire à l’adresse suivante : [contact@acceslibre.beta.gouv.fr](mailto:contact@acceslibre.beta.gouv.fr). Toutes les contributions sont
 les bienvenues !

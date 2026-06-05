@@ -1,6 +1,6 @@
 {
-  "name": "acceslibre",
-  "title": "Schéma des données d'accessibilité des ERPs",
+  "name": "acceslibre-erp-grand-etablissement",
+  "title": "Accessibilité ERP — Grands établissements",
   "description": "Spécification du fichier d'échange relatif aux données d'accessibilité des Établissements Recevant du Public (ERP).",
   "fields": [
     {
