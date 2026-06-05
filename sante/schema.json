@@ -1,6 +1,6 @@
 {
-  "name": "acceslibre",
-  "title": "Schéma des données d'accessibilité des ERPs",
+  "name": "acceslibre-erp-sante",
+  "title": "Accessibilité ERP — Santé",
   "description": "Spécification du fichier d'échange relatif aux données d'accessibilité des Établissements Recevant du Public (ERP).",
   "fields": [
     {
@@ -1656,7 +1656,7 @@
   ],
   "countryCode": "FR",
   "homepage": "https://github.com/MTES-MCT/acceslibre-schema",
-  "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.20/etablissements_scolaires/schema.json",
+  "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.20/sante/schema.json",
   "licenses": [
     {
       "title": "Etalab Licence Ouverte 2.0",
@@ -1668,12 +1668,12 @@
     {
       "title": "Fichier valide (CSV)",
       "name": "exemple-valide-csv",
-      "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.20/etablissements_scolaires/exemple.csv"
+      "path": "https://github.com/MTES-MCT/acceslibre-schema/raw/v0.0.20/sante/exemple.csv"
     },
     {
       "title": "Schéma au format XLS",
       "name": "schema_format_xls",
-      "path": "https://github.com/MTES-MCT/acceslibre-schema/blob/v0.0.20/etablissements_scolaires/schema.xls"
+      "path": "https://github.com/MTES-MCT/acceslibre-schema/blob/v0.0.20/sante/schema.xls"
     }
   ],
   "sources": [],
