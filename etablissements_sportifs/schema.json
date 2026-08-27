@@ -1688,7 +1688,7 @@
       "name": "accueil_douches_collectives",
       "type": "boolean",
       "title": "Douches collectives",
-      "description": "Présence de douches collectives",
+      "description": "Présence de cabines de douche collectives",
       "example": "True",
       "trueValues": [
         "true",
@@ -1718,7 +1718,7 @@
     {
       "name": "accueil_douches_collectives_adaptees",
       "type": "boolean",
-      "description": "Présence de douches collectives accessibles",
+      "description": "Présence de cabines de douche collectives accessibles",
       "example": "True",
       "trueValues": [
         "true",
@@ -1749,7 +1749,7 @@
       "name": "accueil_douches_individuelles",
       "type": "boolean",
       "title": "Douches individuelles",
-      "description": "Présence de cabines de douche individuelles accessibles",
+      "description": "Présence de cabines de douche individuelles",
       "example": "True",
       "trueValues": [
         "true",
@@ -1887,14 +1887,13 @@
       "name": "accueil_prestations_complementaires",
       "type": "array",
       "title": "Prestations complémentaires",
-      "description": "Prestations complémentaires disponibles. Valeurs possibles: sonorisation_arbitrage -> Sonorisation de l'arbitrage possible, score_visible -> Score visible depuis les places assises, prestation_espace_depose_equipements -> Espace de dépose d'équipements (fauteuils, déambulateurs...), reservation_place_facile_d_acces -> Réservation possible de places facile d'accès",
-      "example": "[\"sonorisation_arbitrage\", \"score_visible\", \"prestation_espace_depose_equipements\", \"reservation_place_facile_d_acces\"]",
+      "description": "Prestations complémentaires disponibles. Valeurs possibles: sonorisation_arbitrage -> Sonorisation de l'arbitrage possible, score_visible -> Score visible depuis les places assises, reservation_place_facile_d_acces -> Réservation possible de places facile d'accès",
+      "example": "[\"sonorisation_arbitrage\", \"score_visible\", \"reservation_place_facile_d_acces\"]",
       "arrayItem": {
         "type": "string",
         "enum": [
           "sonorisation_arbitrage",
           "score_visible",
-          "prestation_espace_depose_equipements",
           "reservation_place_facile_d_acces"
         ]
       }
