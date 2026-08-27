@@ -74,7 +74,7 @@ respecte le standard Data Package Schema. Pour en savoir plus, voir la page déd
 
 Une description non technique des champs est également disponible ici : [https://acceslibre.beta.gouv.fr/contrib/documentation/](https://acceslibre.beta.gouv.fr/contrib/documentation/)
 
-D'autres schémas sont également disponibles pour les macro-activités correspondantes dans les dossiers base, bureau_de_vote, etablissements_scolaires, grands_etablissements, hebergement et sante.
+D'autres schémas sont également disponibles pour les macro-activités correspondantes dans les dossiers bureau_de_vote, etablissements_scolaires, grands_etablissements, hebergement et sante.
 
 ### OpenData <a name="opendata"></a>
 

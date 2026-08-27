@@ -2,3 +2,5 @@ env
 venv
 poetry.lock
 pyproject.toml
+.idea
+.DS_Store
