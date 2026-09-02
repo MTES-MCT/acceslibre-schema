@@ -15,7 +15,7 @@ Il existe plusieurs schémas d'accessibilité selon l'activité des ERP.
 - [Schéma pour les établissements sportifs](https://github.com/MTES-MCT/acceslibre-schema/blob/master/etablissements_sportifs/README.md)
 - [Schéma pour les bureaux de vote](https://github.com/MTES-MCT/acceslibre-schema/blob/master/bureau_de_vote/README.md)
 
-Le détails des schémas à appliquer selon les activités des ERP sont précisés dans le document : Activités par schéma
+Le détails des schémas à appliquer selon les activités des ERP sont précisés dans le document : [Activités par schéma](https://github.com/MTES-MCT/acceslibre-schema/blob/master/activites.xlsx)
 
 [Schéma au format json](https://github.com/MTES-MCT/acceslibre-schema/blob/master/etablissements_sportifs/schema.json)
 
