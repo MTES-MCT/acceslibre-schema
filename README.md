@@ -1,9 +1,7 @@
 ## Schéma d’accessibilité aux établissements recevant du public (ERP)
 
 Ce schéma permet de modéliser les informations d’accessibilité aux bâtiments recevant du public, afin notamment de
-faciliter la mobilité des personnes en situation de handicap. Le schéma d’Acceslibre est cohérent avec
-le [standard de données d’accessibilité](http://cnig.gouv.fr/wp-content/uploads/2021/11/211021_Standard_CNIG_Accessibilite_v2021-10.pdf)
-validé par le CNIG et, plus précisément le modèle ERP (décrit en page 20 du standard).
+faciliter la mobilité des personnes en situation de handicap.
 
 Adopter et respecter ce schéma est une garantie, non seulement d’efficacité et de pertinence des informations collectées, mais aussi d’interopérabilité et de facilité du partage des données.
 
