@@ -1,4 +1,4 @@
-## Schéma d’accessibilité aux établissements recevant du public (ERP) - Établissements de santé
+## Schéma d’accessibilité aux établissements recevant du public (ERP) - Établissements sportifs
 
 Ce schéma permet de modéliser les informations d’accessibilité aux bâtiments recevant du public, afin notamment de
 faciliter la mobilité des personnes en situation de handicap.
@@ -17,11 +17,11 @@ Il existe plusieurs schémas d'accessibilité selon l'activité des ERP.
 
 Le détails des schémas à appliquer selon les activités des ERP sont précisés dans le document : [Activités par schéma](https://github.com/MTES-MCT/acceslibre-schema/blob/master/activites.xlsx)
 
-[Schéma au format json](https://github.com/MTES-MCT/acceslibre-schema/blob/master/sante/schema.json)
+[Schéma au format json](https://github.com/MTES-MCT/acceslibre-schema/blob/master/etablissements_sportifs/schema.json)
 
 [Description des champs acceslibre](https://acceslibre.beta.gouv.fr/contrib/documentation/)
 
-[Schéma au format excel](https://github.com/MTES-MCT/acceslibre-schema/blob/master/sante/schema.xls)
+[Schéma au format excel](https://github.com/MTES-MCT/acceslibre-schema/blob/master/etablissements_sportifs/schema.xls)
 
 ### Table des matières
 1. [Contexte](#contexte)
@@ -77,7 +77,7 @@ La base des informations d’accessibilité des ERP en France permet de regroupe
 
 ### Description du schéma <a name="schema"></a>
 
-Le schéma pour les établissements de santé est disponible en format [json](https://github.com/MTES-MCT/acceslibre-schema/blob/master/sante/schema.json) ou [excel](https://github.com/MTES-MCT/acceslibre-schema/blob/master/sante/schema.xls) (à télécharger). (voir procédure avant dépôt des données)
+Le schéma pour les établissements sportifs est disponible en format [json](https://github.com/MTES-MCT/acceslibre-schema/blob/master/etablissements_sportifs/schema.json) ou [excel](https://github.com/MTES-MCT/acceslibre-schema/blob/master/etablissements_sportifs/schema.xls) (à télécharger). (voir procédure avant dépôt des données)
 
 Une description détaillée (champ par champ) du modèle de donnée est accessible ici : [https://schema.data.gouv.fr/MTES-MCT/acceslibre-schema/0.0.20/documentation.html](https://schema.data.gouv.fr/MTES-MCT/acceslibre-schema/0.0.20/documentation.html). Ce schéma
 respecte le standard Data Package Schema. Pour en savoir plus, voir la page dédiée : [DataPackage](https://specs.frictionlessdata.io/data-package/)
@@ -103,7 +103,7 @@ Voici les étapes à suivre en fonction du format choisi :
    2) Prévenir l’équipe acceslibre du dépôt en écrivant un mail à [contact@acceslibre.beta.gouv.fr](mailto:contact@acceslibre.beta.gouv.fr)
 
 2) Format csv, via le modèle fourni “schema”
-   1) Télécharger et remplissez le document excel [schéma format excel](https://github.com/MTES-MCT/acceslibre-schema/blob/master/sante/schema.xls)
+   1) Télécharger et remplissez le document excel [schéma format excel](https://github.com/MTES-MCT/acceslibre-schema/blob/master/etablissements_sportifs/schema.xls)
    2) Avant le dépôt de données :
       * supprimer les lignes 2,3 et tout les lignes “vides”(le modèle comportant 100 lignes)
       * supprimer l’onglet ‘tuto’

@@ -69,6 +69,17 @@
       "mediatype": "text/csv",
       "encoding": "utf-8",
       "documentation": "sante/README.md"
+    },
+    {
+      "name": "acceslibre-erp-etablissement-sportif",
+      "description": "Établissements Recevant du Public (ERP) appartenant à la macro activité en rapport avec les établissements sportifs",
+      "path": "etablissements_sportifs/exemple.csv",
+      "profile": "tabular-data-resource",
+      "schema": "etablissements_sportifs/schema.json",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "documentation": "etablissements_sportifs/README.md"
     }
   ]
 }
