@@ -1,5 +1,6 @@
 ## Schéma d’accessibilité aux établissements recevant du public (ERP) - Base
 
+TEST
 Ce schéma permet de modéliser les informations d’accessibilité aux bâtiments recevant du public, afin notamment de
 faciliter la mobilité des personnes en situation de handicap.
 
